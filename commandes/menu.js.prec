@@ -33,9 +33,9 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     
     
       
-    ╚═════ ▓▓ ࿇ ▓▓ ═════╝*/
+    ╚═════ ▓▓ 𖤍 ▓▓ ═════╝*/
     /* menuMsg+=`
-   ╔════ ▓▓ ࿇FLASH-MD࿇ ▓▓ ════╗
+   ╔════ ▓▓ 𖤍𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍-𝐁𝐎𝐓𖤍 ▓▓ ════╗
   
    ||     Préfixe : ${s.prefixe}
    ||      Owner : ${s.OWNER_NAME}
@@ -43,11 +43,11 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
    ||      Date : ${date}
    ||      Hour : ${temps}
    ||      Mém: ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
-   ||  Developer : France King 
+   ||  Developer : ༒𝐃𝚫𝚳𝚯𝚴𖤍༒
    ||
    ╚════ ▓▓ ࿇ ▓▓ ════╝`;*/
     menuMsg += `
-╔════----*FLASH-MD-----
+╔════----*𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍-𝐁𝐎𝐓*----
 ║    Préfixe : ${s.PREFIXE}
 ║    Owner : ${s.OWNER_NAME}    
 ║    Mode : ${mode}
@@ -56,7 +56,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 ║    Hour: ${temps}
 ║    Mém : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ║    Platform : ${os.platform()}
-║    Déveloper : France King
+║    Déveloper : ༒𝐃𝚫𝚳𝚯𝚴𖤍༒
 ╚════--------------- \n\n`;
     for (const cat in coms) {
         if (!emoji[cat]) {
