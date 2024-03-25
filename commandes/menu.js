@@ -43,21 +43,21 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────✧𝐅𝐋𝐀𝐒𝐇-𝐌𝐃✧────◆
-│🌠 *Préfix* : ${s.PREFIXE}
-│🌠 *User* : ${s.OWNER_NAME}
-│🌠 *Mode* : ${mode}
-│🌠 *Commands* : ${cm.length} 
-│🌠 *Date* : ${date}
-│🌠 *Time* : ${temps} 
-│🌠 *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│🌠 *Platform* : Linux 
-│🌠 *Uptime*: ${runtime(process.uptime())}
-╰─────✧The-GOAT✧─────◆ \n\n`;
+╭────𖤍𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍-𝐁𝐎𝐓𖤍────◆
+│𖤍 *Préfix* : ${s.PREFIXE}
+│𖤍 *User* : ${s.OWNER_NAME}
+│𖤍 *Mode* : ${mode}
+│𖤍 *Commands* : ${cm.length} 
+│𖤍 *Date* : ${date}
+│𖤍 *Time* : ${temps} 
+│𖤍 *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+│𖤍 *Platform* : Linux 
+│𖤍 *Uptime*: ${runtime(process.uptime())}
+╰─────⚡Kimmy⚡─────◆ \n\n`;
 
   let menuMsg=`  
 
-*FLASH-MD COMMANDS :*
+*MEGATRON-BOT COMMANDS :*
 ◇                             ◇
 `;
 
@@ -75,7 +75,7 @@ const date = moment().format('DD/MM/YYYY');
 ◇            ◇
 *————— ★ —————*
 
-  *📌France King®🐐²0²⁴*                                         
+  *𖤍 ༒𝐃𝚫𝚳𝚯𝚴𖤍༒³¹⁶*                                         
 *╰═════════════⊷*
 `;
 
