@@ -219,7 +219,7 @@ zokou(
         if(!arg||arg=="")
         {
    
-          repondre(`  Exemple :* ${prefixe}boom FLASH-MD`)
+          repondre(`  Exemple :* ${prefixe}boom MEGATRON-BOT`)
           return ;
         }
        try{
@@ -242,9 +242,9 @@ var lien="https://en.ephoto360.com/boom-text-comic-style-text-effect-675.html";
          
 
 repondre("  processing ...")
-         await zk.sendMessage(dest,{image:{url:img.image},caption:"\t *Logo by FLASH-MD*"})
+         await zk.sendMessage(dest,{image:{url:img.image},caption:"\t *Logo by MEGATRON-BOT*"})
          
-        // await zk.sendMessage(dest,{image:{url:lienImage},caption:"\t *Logo by Flash-Md*"})
+        // await zk.sendMessage(dest,{image:{url:lienImage},caption:"\t *Logo by Megatron-Bot*"})
          
 
 
@@ -266,7 +266,7 @@ var {ms,repondre,arg,prefixe}=commandeOptions;
     var lien ="https://en.ephoto360.com/create-water-effect-text-online-295.html";
     var img =await mumaker.ephoto(lien,arg);
     repondre(" processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:"  *Logo by FLASH-MD*"})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:"  *Logo by MEGATRON-BOT*"})
   }catch(e){repondre(`🥵🥵 ${e}`)}
 
 });
@@ -487,7 +487,7 @@ zokou({nomCom:"incandescent",categorie:"Logo",reaction:"😋"},async(dest,zk,com
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"incandescent Flash-MD");return;
+        repondre(prefixe+"incandescent Megatron-Bot");return;
       }
 
     var lien="https://en.ephoto360.com/text-effects-incandescent-bulbs-219.html";
@@ -525,7 +525,7 @@ zokou({nomCom:"typo",categorie:"Logo",reaction:"😇"},async(dest,zk,commandeOpt
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"typo Flash-MD");return;
+        repondre(prefixe+"typo Megatron-Bot");return;
       }
 
     var lien="https://en.ephoto360.com/typography-text-effect-on-pavement-online-774.html";
@@ -543,7 +543,7 @@ zokou({nomCom:"light",categorie:"Logo",reaction:"🌠"},async(dest,zk,commandeOp
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"light Flash-MD");return;
+        repondre(prefixe+"light Megatron-Bot");return;
       }
 
     var lien="https://en.ephoto360.com/light-text-effect-futuristic-technology-style-648.html";
@@ -561,7 +561,7 @@ zokou({nomCom:"steel",categorie:"Logo",reaction:"🌠"},async(dest,zk,commandeOp
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"steel Flash-MD");return;
+        repondre(prefixe+"steel MEGATRON-BOT");return;
       }
 
     var lien="https://en.ephoto360.com/dragon-steel-text-effect-online-347.html";
@@ -580,7 +580,7 @@ zokou({nomCom:"sunlight",categorie:"Logo",reaction:"🌠"},async(dest,zk,command
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"sunlight Flash-MD");return;
+        repondre(prefixe+"sunlight Megatron-Bot");return;
       }
 
     var lien="https://en.ephoto360.com/sunlight-shadow-text-204.html";
