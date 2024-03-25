@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Madmkisii/Megatron-Bot.git  /root/MegatronBot
-WORKDIR /root/MegatronBot/
+RUN git clone https://github.com/franceking1/Flash-MD.git  /root/FlashMd
+WORKDIR /root/FlashMD/
 
 
 COPY package.json .
@@ -21,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "Megatron.js"]
+CMD ["node", "flash.js"]
