@@ -9,7 +9,7 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Madmkisii/Megatron-Bot.git  /root/FlashMd
+RUN git clone https://github.com/Madmkisii/Megatron-Bot.git  /root/MegatronBot
 WORKDIR /root/MegatronBot/
 
 
