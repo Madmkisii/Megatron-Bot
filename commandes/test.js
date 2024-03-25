@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 zokou({ nomCom: "repo", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = 'Hello This is  *MEGATRON-BOT* \n\n ' + "The Following is *FLASH-MD Repo.*";
+    let z = 'Hello This is  *MEGATRON-BOT* \n\n ' + "The Following is *MEGATRON-BOTRepo.*";
     let d = ' https://github.com/Madmkisii/Megatron-Bot';
     let varmess = z + d;
     var img = 'https://telegra.ph/file/bcf5cec3445652ab197bc.jpg';
