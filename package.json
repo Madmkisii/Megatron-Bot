@@ -1,5 +1,5 @@
 {
-  "name": "FLASH-MD",
+  "name": "MEGATRON-BOT",
   "version": "2.0.0",
   "description": "",
   "main": "flash.js",
@@ -12,12 +12,12 @@
   "keywords": [
     "bot",
     "Baileys",
-    "Flash-Md",
+    "Megatron-Bot",
     "whatsapp",
     "whatsapp-bot",
-    "franceking1"
+    "damon"
   ],
-  "author": "France King",
+  "author": "Damon",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
