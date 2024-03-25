@@ -5,7 +5,7 @@
   "main": "flash.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node flash.js",
+    "s": "node megatron.js",
     "flashmd": "pm2 start flash.js --attach --max-memory-restart 490M",
     "c": "tsc"
   },
