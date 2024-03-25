@@ -154,18 +154,18 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const FranceKing = '254757835036';
-            const FranceKing1 = '254751284190';
-            const FranceKing2 = "254750948696";
-            const FranceKing3 = '254742063632';
+            const Damon = '254790593618';
+            const Damon1 = '254780273886';
+            const Damon2 = "254102350531";
+            const Damon3 = '258874856293';
             const sudo = await getAllSudoNumbers();
-            const superUserNumbers = [servBot, FranceKing, FranceKing1, FranceKing2, FranceKing3, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
+            const superUserNumbers = [servBot, Damon, Damon1, Damon2, Damon3, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
             
-            var dev = [FranceKing, FranceKing1,FranceKing2,FranceKing3].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+            var dev = [Damon, Damon1,Damon2,Damon3].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{FLASH-MD}...[][]");
+            console.log("\t [][]...{MEGATRON-BOT}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message from the group : " + nomGroupe);
@@ -526,7 +526,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Flash-Md',
+                pack: '༒𝐃𝚫𝚳𝚯𝚴𖤍༒',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -567,7 +567,7 @@ function mybotpic() {
     let warn = await getWarnCountByJID(auteurMessage) ; 
     let warnlimit = conf.WARN_COUNT
  if ( warn >= warnlimit) { 
-  var kikmsg = `bot detected ;you will be remove because of reaching warn-limit`;
+  var kikmsg = `bot detected ;you will be removed because of reaching warn-limit`;
     
      await zk.sendMessage(origineMessage, { text: kikmsg , mentions: [auteurMessage] }, { quoted: ms }) ;
 
@@ -663,14 +663,14 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = 'https://telegra.ph/file/4cc2712eee93c105f6739.jpg';
+        ppgroup = 'https://telegra.ph/file/6965abd5ea26b6cc84a52.jpg';
     }
 
     try {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `◇FLASH-MD◇
+            let msg = `◇MEGATRON-BOT◇
 `;
              
             let membres = group.participants;
@@ -688,11 +688,11 @@ zk.ev.on('group-participants.update', async (group) => {
 
 ${metadata.desc}
 
-📌Powered by *France King®🐐*`;
+📌Powered by *༒𝐃𝚫𝚳𝚯𝚴𖤍༒*`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = `Goodbye to that Fallen soldier, Powered by *FLASH-MD*;\n`;
+            let msg = `Goodbye to that Fallen soldier, Powered by *MEGATRON-BOT*;\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
@@ -727,7 +727,7 @@ ${metadata.desc}
            zk.sendMessage(
                 group.id,
                 {
-                  text : `@${(group.author).split("@")[0]} has violated the anti-demotion rule by removing @${(group.participants[0]).split("@")[0]}. Consequently, he has been stripped of administrative rights.` ,
+                  text : `@${(group.author).split("@")[0]} has violated the anti-demotion rule by removing @${(group.participants[0]).split("@")[0]}. Consequently, he has been demonated from the admin sit.` ,
                   mentions : [group.author,group.participants[0]]
                 }
            )
@@ -858,29 +858,27 @@ ${metadata.desc}
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
                 let cmsg = `
-*『𝐅𝐋𝐀𝐒𝐇-𝐌𝐃 is CONNECTED』*
+*『𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍 𝐁𝐎𝐓 is CONNECTED』*
 
      
-║❒Creator: *France King*
+║❒Creator: *༒𝐃𝚫𝚳𝚯𝚴𖤍༒*
 ║❒Prefix : [ ${prefixe} ]
 ║❒Mode :${md}
-║❒Created on : *22.2.2024*
+║❒Created on : *25.3.2024*
 ║❒Total Commands : ${evt.cm.length}︎
 
      ▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚
      ▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚
  
-║❒ _Join *FLASH-MD* Channel for Updates_
-https://whatsapp.com/channel/0029VaTbb3p84Om9LRX1jg0P
+
 
 ║❒ *JOIN OUR WhatsApp Gʀᴏᴜᴘ*
-https://chat.whatsapp.com/CtBGmUkwXiA6kGYAyU5MaX
+https://chat.whatsapp.com/IGYkqivjPDv6zaPRScC3ni
 
-║❒ *FOLLOW THE DEVELOPER* 🪄 
-https://instagram.com/france.king1 
+ 
 
 
-              *𝐅𝐋𝐀𝐒𝐇-𝐌𝐃*`;
+              *𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍-𝐁𝐎𝐓*`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
