@@ -31,7 +31,7 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        🌟 *FLASH-MD* 🌟
+        ✞ *MEGATRON-BOT* ✞
 ========================\n
 👥 Group : ${nomGroupe} 🚀 
 👤 Author : *${nomAuteurMessage}* 👋 
@@ -121,17 +121,17 @@ zokou({ nomCom: "promote", categorie: 'Group', reaction: "👨🏿‍💼" }, as
         if (zkad) {
           if (membre) {
             if (admin == false) {
-              var txt = `🎊🍾  @${auteurMsgRepondu.split("@")[0]} Has been promoted as a group Admin.`
+              var txt = `🎊🍾  @${auteurMsgRepondu.split("@")[0]} Has been promoted as a group Admin by 𝛫𝛪𝛭𝛭𝑌.`
               await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "promote");
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
-            } else { return repondre("This member is already an administrator of the group.") }
+            } else { return repondre("This member is already an admin.") }
 
-          } else { return repondre("This user is not part of the group."); }
+          } else { return repondre("This user is not a member of the group."); }
         }
-        else { return repondre("Sorry, I cannot perform this action because I am not an administrator of the group.") }
+        else { return repondre("Sorry, I am not admin.") }
 
       } else { repondre("please tag the member to be nominated"); }
-    } else { return repondre("Sorry I cannot perform this action because you are not an administrator of the group.") }
+    } else { return repondre("F*ckin retard this command is for group admins.") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -183,20 +183,20 @@ zokou({ nomCom: "demote", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
           if (membre) {
             if (admin == false) {
 
-              repondre("This member is not a group administrator.")
+              repondre("This crap of a c*m is not an admin.")
 
             } else {
-              var txt = `@${auteurMsgRepondu.split("@")[0]} was removed from his position as a group administrator\n`
+              var txt = `@${auteurMsgRepondu.split("@")[0]} was removed from his position as a group admin\n`
               await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "demote");
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
             }
 
           } else { return repondre("This user is not part of the group."); }
         }
-        else { return repondre("Sorry I cannot perform this action because I am not an administrator of the group.") }
+        else { return repondre("I wm not admin.") }
 
       } else { repondre("please tag the member to be removed"); }
-    } else { return repondre("Sorry I cannot perform this action because you are not an administrator of the group.") }
+    } else { return repondre("F*ckin h*e command is for admina.") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -250,7 +250,7 @@ zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
             if (admin == false) {
               const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif"
               var sticker = new Sticker(gifLink, {
-                pack: 'FLASH-MD', // The pack name
+                pack: '༒𝐃𝚫𝚳𝚯𝚴𖤍༒', // The pack name
                 author: nomAuteurMessage, // The author name
                 type: StickerTypes.FULL, // The sticker type
                 categories: ['🤩', '🎉'], // The sticker category
@@ -269,10 +269,10 @@ zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
 
           } else { return repondre("This user is not part of the group."); }
         }
-        else { return repondre("Sorry, I cannot perform this action because I am not an administrator of the group.") }
+        else { return repondre("I am not an admin of this group.") }
 
       } else { repondre("please tag the member to be removed"); }
-    } else { return repondre("Sorry I cannot perform this action because you are not an administrator of the group .") }
+    } else { return repondre("D*ckhead this command is for group admins .") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -291,7 +291,7 @@ zokou({ nomCom: "add", categorie: 'Group', reaction: "👨🏿‍💼" }, async 
 		const isImAdmin = await isAdmin(participants, message.client.user.jid)
 		if (!isImAdmin) return await message.send(`_I'm not admin._`)
 		match = match || message.reply_message.jid
-		if (!match) return await message.send('Example : add 254757835036')
+		if (!match) return await message.send('Example : add 254790593618')
 		// if (!match.startsWith('@@')) {
 		// 	match = jidToNum(match)
 		// 	const button = await genButtonMessage(
@@ -549,7 +549,7 @@ zokou({ nomCom: "group", categorie: 'Group' }, async (dest, zk, commandeOptions)
 
     
   } else {
-    repondre("order reserved for the administratorr");
+    repondre("order reserved for the admins");
     return;
   }
  
@@ -574,7 +574,7 @@ zokou({ nomCom: "gname", categorie: 'Group' }, async (dest, zk, commandeOptions)
   const { arg, repondre, verifAdmin } = commandeOptions;
 
   if (!verifAdmin) {
-    repondre("order reserved for administrators of the group");
+    repondre("order reserved for admins of the group");
     return;
   };
   if (!arg[0]) {
@@ -593,7 +593,7 @@ zokou({ nomCom: "gdesc", categorie: 'Group' }, async (dest, zk, commandeOptions)
   const { arg, repondre, verifAdmin } = commandeOptions;
 
   if (!verifAdmin) {
-    repondre("order reserved for administrators of the group");
+    repondre("order reserved for admins of the group");
     return;
   };
   if (!arg[0]) {
@@ -613,7 +613,7 @@ zokou({ nomCom: "gpp", categorie: 'Group' }, async (dest, zk, commandeOptions) =
   const { repondre, msgRepondu, verifAdmin } = commandeOptions;
 
   if (!verifAdmin) {
-    repondre("order reserved for administrators of the group");
+    repondre("order reserved for admins of the group");
     return;
   }; 
   if (msgRepondu.imageMessage) {
@@ -698,7 +698,7 @@ zokou({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,command
         let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
 
         let stickerMess = new Sticker(media, {
-          pack: 'FLASH-MD-tag',
+          pack: '༒𝐃𝚫𝚳𝚯𝚴𖤍༒-tag',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
@@ -734,7 +734,7 @@ zokou({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,command
     }
 
 } else {
-  repondre('Command reserved for administrators.')
+  repondre('Command reserved for admins.')
 }
 
 });
@@ -764,7 +764,7 @@ zokou({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest, z
 
     const downloadLink = appData.dllink;
     const captionText =
-      "『 *FLASH-MD App* 』\n\n*Name :* " + appData.name +
+      "『 *MEGATRON App* 』\n\n*Name :* " + appData.name +
       "\n*Id :* " + appData["package"] +
       "\n*Last Update :* " + appData.lastup +
       "\n*Size :* " + appData.size +
@@ -816,7 +816,7 @@ zokou({
 
       const {arg , repondre , verifAdmin } = commandeOptions ;
 
-      if (!verifAdmin) { repondre('You are not an administrator of the group') ; return}
+      if (!verifAdmin) { repondre('You are not an admin of this group') ; return}
 
       group_cron = await cron.getCronById(dest) ;
       
@@ -888,7 +888,7 @@ zokou({
 
     const {arg , repondre , verifAdmin } = commandeOptions ;
 
-    if (!verifAdmin) { repondre('You are not an administrator of the group') ; return}
+    if (!verifAdmin) { repondre('You are not an admin of this group') ; return}
 
     group_cron = await cron.getCronById(dest) ;
     
@@ -967,7 +967,7 @@ zokou({
 
   if (verifAdmin || superUser) {
 
-    if(!verifZokouAdmin){ repondre('You need administrative rights to perform this command') ; return ;}
+    if(!verifZokouAdmin){ repondre('You need admin rights to perform this command') ; return ;}
 
     if (!arg || arg.length == 0) { repondre('Please enter the country code whose members will be removed') ; return ;}
 
@@ -984,7 +984,7 @@ zokou({
       }
 
   } else {
-    repondre('Sorry, you are not an administrator of the group')
+    repondre('Sorry, you are not an admin of this group')
   }
 
 
@@ -998,7 +998,7 @@ zokou({
   
     const {arg , repondre , verifAdmin } = commandeOptions ;
 
-  if(!verifAdmin) { repondre('Sorry, you cannot enable NSFW content without being an administrator of the group') ; return}
+  if(!verifAdmin) { repondre('Sorry, you cannot enable NSFW content without being an admin of the group') ; return}
 
       let hbd = require('../bdd/hentai') ;
 
