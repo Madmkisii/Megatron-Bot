@@ -450,7 +450,7 @@ zokou({nomCom:"gold",categorie:"Logo",reaction:"🧚🏿‍♀️"},async(dest,z
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"gold Flash-MD");return;
+        repondre(prefixe+"gold MEGATRON");return;
       }
 
     var lien="https://en.ephoto360.com/modern-gold-4-213.html";
