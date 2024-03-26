@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker:   npm run megatronbot
+   worker:   npm run flashmd
