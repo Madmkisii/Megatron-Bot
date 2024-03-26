@@ -469,7 +469,7 @@ zokou({nomCom:"arena",categorie:"Logo",reaction:"🥵"},async(dest,zk,commandeOp
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"arena Flash-MD");return;
+        repondre(prefixe+"arena MEGATRON-BOT");return;
       }
 
     var lien="https://en.ephoto360.com/create-cover-arena-of-valor-by-mastering-360.html";
@@ -506,7 +506,7 @@ zokou({nomCom:"child",categorie:"Logo",reaction:"😇"},async(dest,zk,commandeOp
   try{
       if(!arg||arg=="")
       {
-        repondre(prefixe+"child Flash-MD");return;
+        repondre(prefixe+"child MEGATRON-BOT");return;
       }
 
     var lien="https://en.ephoto360.com/write-text-on-wet-glass-online-589.html";
