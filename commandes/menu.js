@@ -53,7 +53,7 @@ const date = moment().format('DD/MM/YYYY');
 │𖤍 *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │𖤍 *Platform* : Linux 
 │𖤍 *Uptime*: ${runtime(process.uptime())}
-╰─────⚡Kimmy⚡─────◆ \n\n`;
+╰─────✞🩸𝐊𝚰𝚳𝚳𝐘𓃵𖤍🔥³¹⁶─────◆ \n\n`;
 
   let menuMsg=`  
 
@@ -62,10 +62,10 @@ const date = moment().format('DD/MM/YYYY');
 `;
 
     for (const cat in coms) {
-        menuMsg += `*╭────☢️* *${cat}* *☢️⊷*`;
+        menuMsg += `*╭────✞* *${cat}* *✞⊷*`;
         for (const cmd of coms[cat]) {
             menuMsg += `
-*☬* ${cmd}`;
+*𓃵* ${cmd}`;
         }
         menuMsg += `
 *╰═════════════⊷* \n`
@@ -93,7 +93,7 @@ const date = moment().format('DD/MM/YYYY');
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "*📌France King*" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "*༒𝐃𝚫𝚳𝚯𝚴𖤍༒*" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
