@@ -873,7 +873,7 @@ ${metadata.desc}
 
 
 ║❒ *JOIN OUR WhatsApp Gʀᴏᴜᴘ*
-https://chat.whatsapp.com/IGYkqivjPDv6zaPRScC3ni
+https://chat.whatsapp.com/HSChig1YPPQIDEtpvzMBuo
 
  
 
