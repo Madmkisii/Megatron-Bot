@@ -1,5 +1,5 @@
  <h1 align="center"> 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍-𝐁𝐎𝐓  </h1>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=1150&height=100&lines=THANKS FOR CHOOSING +MEGATRON-BOT;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+DAMON+KIMMY;RELESED+BY+MOGIRE.2024" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=1150&height=100&lines=THANKS FOR CHOOSING +MEGATRON-BOT;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+DAMON+KIMMY; RELEASED+BY+MOGIRE.2024" alt="Typing SVG" /></a>
   </p>
 
 
