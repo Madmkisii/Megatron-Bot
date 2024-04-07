@@ -1,6 +1,6 @@
  <h1 align="center"> MEGATRON-BOT </h1>
-<p align="center"> MEGATRON-BOT, A Simple WhatsApp user BOT, Created by Damon.
-</p>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=650&height=100&lines=THANKS FOR CHOOSING +MEGATRON-BOT;MULTI+DEVICE+WHATSAPP+BOT;CREATED+BY+DAMON+KIMMY;RELESED+BY+MOGIRE.2024" alt="Typing SVG" /></a>
+  </p>
 
 
 
