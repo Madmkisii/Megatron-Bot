@@ -57,7 +57,7 @@ const date = moment().format('DD/MM/YYYY');
 
   let menuMsg=`  
 
-*MEGATRON-BOT COMMANDS :*
+* 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 :*
 ◇                             ◇
 `;
 
