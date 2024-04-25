@@ -31,7 +31,7 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        ✞ *MEGATRON-BOT* ✞
+        ✞ *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻* ✞
 ========================\n
 👥 Group : ${nomGroupe} 🚀 
 👤 Author : *${nomAuteurMessage}* 👋 
@@ -124,14 +124,14 @@ zokou({ nomCom: "promote", categorie: 'Group', reaction: "👨🏿‍💼" }, as
               var txt = `🎊🍾  @${auteurMsgRepondu.split("@")[0]} Has been promoted as a group Admin by 𝛫𝛪𝛭𝛭𝑌.`
               await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "promote");
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
-            } else { return repondre("This member is already an admin.") }
+            } else { return repondre("𝑴𝒆𝒎𝒃𝒆𝒓 𝒊𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒂𝒏 𝒂𝒅𝒎𝒊𝒏.") }
 
-          } else { return repondre("This user is not a member of the group."); }
+          } else { return repondre("𝑼𝒔𝒆𝒓 𝒏𝒐𝒕 𝒂 𝒎𝒆𝒎𝒃𝒆𝒓 𝒐𝒇 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑."); }
         }
-        else { return repondre("Sorry, I am not admin.") }
+        else { return repondre("𝑰𝒅𝒊𝒐𝒕, 𝑰 𝒂𝒎 𝒏𝒐𝒕 𝒂𝒅𝒎𝒊𝒏.") }
 
-      } else { repondre("please tag the member to be nominated"); }
-    } else { return repondre("F*ckin retard this command is for group admins.") }
+      } else { repondre("𝒑𝒍𝒆𝒂𝒔𝒆 𝒕𝒂𝒈 𝒎𝒆𝒎𝒃𝒆𝒓 𝒕𝒐 𝒃𝒆 𝒑𝒓𝒐𝒎𝒐𝒕𝒆𝒅"); }
+    } else { return repondre("𝑭*𝒖𝒄𝒌𝒊𝒏 𝒓𝒆𝒕𝒂𝒓𝒅 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊𝒔 𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑 𝒂𝒅𝒎𝒊𝒏𝒔.") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -183,20 +183,20 @@ zokou({ nomCom: "demote", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
           if (membre) {
             if (admin == false) {
 
-              repondre("This crap of a c*m is not an admin.")
+              repondre("𝑻𝒉𝒊𝒔 𝒄𝒓𝒂𝒑 𝒐𝒇 𝒂 𝒄*𝒎 𝒊𝒔 𝒏𝒐𝒕 𝒂𝒏 admi𝒏.")
 
             } else {
-              var txt = `@${auteurMsgRepondu.split("@")[0]} was removed from his position as a group admin\n`
-              await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "demote");
+              var txt = `@${auteurMsgRepondu.split("@")[0]} 𝒘𝒂𝒔 𝒓𝒆𝒎𝒐𝒗𝒆𝒅 𝒇𝒓𝒐𝒎 𝒉𝒊𝒔 𝒑𝒐𝒔𝒊𝒕𝒊𝒐𝒏 𝒂𝒔 𝒂 𝒈𝒓𝒐𝒖𝒑 𝒂𝒅𝒎𝒊𝒏\n`
+              await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "𝒅𝒆𝒎𝒐𝒕𝒆");
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
             }
 
-          } else { return repondre("This user is not part of the group."); }
+          } else { return repondre("𝑻𝒉𝒊𝒔 𝒖𝒔𝒆𝒓 𝒊𝒔 𝒏𝒐𝒕 𝒑𝒂𝒓𝒕 𝒐𝒇 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑."); }
         }
-        else { return repondre("I wm not admin.") }
+        else { return repondre("𝑰 𝒂𝒎 𝒏𝒐𝒕 𝒂𝒅𝒎𝒊𝒏.") }
 
-      } else { repondre("please tag the member to be removed"); }
-    } else { return repondre("F*ckin h*e command is for admina.") }
+      } else { repondre("𝒑𝒍𝒆𝒂𝒔𝒆 𝒕𝒂𝒈 𝒕𝒉𝒆 𝒎𝒆𝒎𝒃𝒆𝒓 𝒕𝒐 𝒃𝒆 𝒓𝒆𝒎𝒐𝒗𝒆𝒅"); }
+    } else { return repondre("𝑭*𝒄𝒌𝒊𝒏 𝒉*𝒆 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊𝒔 𝒇𝒐𝒓 𝒂𝒅𝒎𝒊𝒏.") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -260,19 +260,19 @@ zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
               });
 
               await sticker.toFile("st.webp")
-              var txt = `@${auteurMsgRepondu.split("@")[0]} was removed from the group.\n`
+              var txt = `@${auteurMsgRepondu.split("@")[0]} 𝒘𝒂𝒔 𝒓𝒆𝒎𝒐𝒗𝒆𝒅 𝒇𝒓𝒐𝒎 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑.\n`
             /*  zk.sendMessage(dest, { sticker: fs.readFileSync("st.webp") }, { quoted: ms.message.extendedTextMessage.contextInfo.stanzaId})*/
               await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "remove");
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
 
-            } else { repondre("This member cannot be removed because he is an administrator of the group.") }
+            } else { repondre("𝑩𝒐𝒕 𝒄𝒂𝒏𝒏𝒐𝒕 𝒓𝒆𝒎𝒐𝒗𝒆 𝒂𝒅𝒎𝒊𝒏.") }
 
-          } else { return repondre("This user is not part of the group."); }
+          } else { return repondre("𝑻𝒉𝒊𝒔 𝒖𝒔𝒆𝒓 𝒊𝒔 𝒏𝒐𝒕 𝒑𝒂𝒓𝒕 𝒐𝒇 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑."); }
         }
-        else { return repondre("I am not an admin of this group.") }
+        else { return repondre("𝑰 𝒂𝒎 𝒏𝒐𝒕 𝒂𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑.") }
 
-      } else { repondre("please tag the member to be removed"); }
-    } else { return repondre("D*ckhead this command is for group admins .") }
+      } else { repondre("𝒑𝒍𝒆𝒂𝒔𝒆 𝒕𝒂𝒈 𝒕𝒉𝒆 𝒎𝒆𝒎𝒃𝒆𝒓 𝒕𝒐 𝒃𝒆 𝒓𝒆𝒎𝒐𝒗𝒆𝒅"); }
+    } else { return repondre("𝑫*𝒄𝒌𝒉𝒆𝒂𝒅 𝒕𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊𝒔 𝒇𝒐𝒇 𝒈𝒓𝒐𝒖𝒑 𝒂𝒅𝒎𝒊𝒏𝒔.") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -285,13 +285,13 @@ zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
 zokou({ nomCom: "add", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, nomAuteurMessage, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
-  if (!verifGroupe) { return repondre("for groups only");} 
+  if (!verifGroupe) { return repondre("𝒇𝒐𝒇 𝒈𝒓𝒐𝒖𝒑𝒔 𝒐𝒏𝒍𝒍");} 
 
   const participants = await message.groupMetadata(message.jid)
 		const isImAdmin = await isAdmin(participants, message.client.user.jid)
 		if (!isImAdmin) return await message.send(`_I'm not admin._`)
 		match = match || message.reply_message.jid
-		if (!match) return await message.send('Example : add 254790593618')
+		if (!match) return await message.send('Example : 𝒂𝒅𝒅 254790593618')
 		// if (!match.startsWith('@@')) {
 		// 	match = jidToNum(match)
 		// 	const button = await genButtonMessage(
@@ -310,7 +310,7 @@ zokou({ nomCom: "add", categorie: 'Group', reaction: "👨🏿‍💼" }, async 
 		// }
 		match = jidToNum(match)
 		const res = await message.Add(match)
-		if (res == '403') return await message.send('_Failed, Invite sent_')
+		if (res == '403') return await message.send('_𝑭𝒂𝒊𝒍𝒆𝒅, 𝑰𝒏𝒗𝒊𝒕𝒆 𝒔𝒆𝒏𝒕_')
 		else if (res && res != '200')
 			return await message.send(res, { quoted: message.data })
 
@@ -325,7 +325,7 @@ zokou({ nomCom: "del", categorie: 'Group',reaction:"🧹" }, async (dest, zk, co
   const { ms, repondre, verifGroupe,auteurMsgRepondu,idBot, msgRepondu, verifAdmin, superUser} = commandeOptions;
   
   if (!msgRepondu) {
-    repondre("Please mention the message to delete.");
+    repondre("𝑷𝒍𝒆𝒂𝒔𝒆 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒕𝒉𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒕𝒐 𝒅𝒆𝒍𝒆𝒕𝒆.");
     return;
   }
   if(superUser && auteurMsgRepondu==idBot )
@@ -360,17 +360,17 @@ zokou({ nomCom: "del", categorie: 'Group',reaction:"🧹" }, async (dest, zk, co
          
          await zk.sendMessage(dest,{delete:key});return;
 
-             }catch(e){repondre( "I need admin rights.")}
+             }catch(e){repondre( "𝑰 𝒏𝒆𝒆𝒅 𝒕𝒐 𝒃𝒆 𝒂𝒏 𝒂𝒅𝒎𝒊𝒏.")}
                     
                       
-               }else{repondre("Sorry, you are not an administrator of the group.")}
+               }else{repondre("𝑺𝒐𝒓𝒓𝒚, 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒂𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑.")}
           }
 
 });
 
 zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, verifGroupe } = commandeOptions;
-  if (!verifGroupe) { repondre("order reserved for the group only"); return };
+  if (!verifGroupe) { repondre("𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑 𝒐𝒏𝒍𝒚"); return };
 
  try { ppgroup = await zk.profilePictureUrl(dest ,'image') ; } catch { ppgroup = conf.IMAGE_MENU}
 
@@ -381,7 +381,7 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
     let mess = {
       image: { url: ppgroup },
-      caption:  `*━━━━『GROUP INFO』━━━━*\n\n*🎐Name:* ${info.subject}\n\n*🔩Group's ID:* ${dest}\n\n*🔍Desc:* \n\n${info.desc}`
+      caption:  `*━━━━『𝑮𝑹𝑶𝑼𝑷 𝑰𝑵𝑭𝑶』━━━━*\n\n*🎐𝑵𝒂𝒎𝒆:* ${info.subject}\n\n*🔩𝑮𝒓𝒐𝒖𝒑's 𝑰𝑫:* ${dest}\n\n*🔍𝑫𝒆𝒔𝒄:* \n\n${info.desc}`
     }
 
 
@@ -400,13 +400,13 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
   
   if (!verifGroupe) {
-    return repondre("*for groups only*");
+    return repondre("*𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑𝒔 𝒐𝒏𝒍𝒚*");
   }
   
   if( superUser || verifAdmin) {
     const enetatoui = await verifierEtatJid(dest)
     try {
-      if (!arg || !arg[0] || arg === ' ') { repondre("antilink on to activate the anti-link feature\nantilink off to deactivate the anti-link feature\nantilink action/remove to directly remove the link without notice\nantilink action/warn to give warnings\nantilink action/delete to remove the link without any sanctions\n\nPlease note that by default, the anti-link feature is set to delete.") ; return};
+      if (!arg || !arg[0] || arg === ' ') { repondre("𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒐𝒏 𝒕𝒐 activa the anti-link feature\nantilink off to deactivate the anti-link feature\nantilink action/remove to directly remove the link without notice\nantilink action/warn to give warnings\nantilink action/delete to remove the link without any sanctions\n\nPlease note that by default, the anti-link feature is set to delete.") ; return};
      
       if(arg[0] === 'on') {
 
