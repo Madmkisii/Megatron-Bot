@@ -58,7 +58,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
       const response = await axios.get(`https://vihangayt.me/tools/photoleap?q=${image}`);
       
       const data = response.data;
-      let caption = '*powered by MEGATRON-BOT*';
+      let caption = '*𝒑𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*';
       
       if (data.status && data.owner && data.data) {
         // Utiliser les données retournées par le service
