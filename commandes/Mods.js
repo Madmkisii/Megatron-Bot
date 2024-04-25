@@ -342,7 +342,7 @@ zokou({
   if(!verifGroupe) {repondre('𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒂𝒕𝒊𝒐𝒏 𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑𝒔' ) ; return };
     if (!arg[0]) {
         // Function 'reply' must be defined to send a response.
-        repondre(`type ${prefix}bang add/del to ban/unban the group`);
+        repondre(`type ${prefix}ban add/del to ban/unban the group`);
         return;
     };
     const groupalreadyBan = await isGroupBanned(dest)
@@ -565,7 +565,7 @@ zokou({
 
  const {ms , repondre ,superUser , arg} = commandeOptions ;
 
- if (!superUser) {repondre('you do not have the rights for this command') ; return}
+ if (!superUser) {repondre'𝒚𝒐𝒖 𝒅𝒐 𝒏𝒐𝒕 𝒉𝒂𝒗𝒆 𝒕𝒉𝒆 𝒓𝒊𝒈𝒉𝒕𝒔 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅') ; return}
 
  const mbdd = require('../bdd/mention') ;
 
@@ -579,7 +579,7 @@ zokou({
 
   if (alldata.length === 0 ) { repondre(`To activate or modify the mention; follow this syntax: mention link type message
   The different types are audio, video, image, and sticker.
-  Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is France King`) ; return}
+  Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is 𝑲𝒊𝒏𝒈 𝑮`) ; return}
 
       if(data.status == 'non') {
           etat = 'Desactived'
