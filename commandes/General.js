@@ -60,7 +60,7 @@ zokou({ nomCom: "developer", categorie: "General", reaction: "💞" }, async (de
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "👋 *Welcome to Megatron-Bot!* here is the developer numbers:\n\n";
+    let message = "👋 *𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝑴𝒆𝒈𝒂𝒕𝒓𝒐𝒏-𝑩𝒐𝒕!* 𝒉𝒆𝒓𝒆 𝒊𝒔 𝒕𝒉𝒆 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝒏𝒖𝒎𝒃𝒆𝒓𝒔:\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
