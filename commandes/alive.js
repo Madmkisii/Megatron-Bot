@@ -43,7 +43,7 @@ const date = moment().format('DD/MM/YYYY');
  ${message}
  
  
- *MEGATRON-BOT by Damon is alive*`
+ *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻 𝒃𝒚 𝑫𝒂𝒎𝒐𝒏 𝒊𝒔 𝒂𝒍𝒊𝒗𝒆*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
@@ -71,14 +71,14 @@ else {
 }
 
     } else {
-        if(!superUser) { repondre("there is no alive for this bot") ; return};
+        if(!superUser) { repondre("𝒕𝒉𝒆𝒓𝒆 𝒊𝒔 𝒏𝒐 𝒂𝒍𝒊𝒗𝒆 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒃𝒐𝒕") ; return};
 
-      await   repondre("You have not yet saved your alive, to do this;  enter after alive your message and your image or video link in this context: .alive message;lien");
-         repondre("don't do fake things :)")
+      await   repondre("𝒀𝒐𝒖 𝒉𝒂𝒗𝒆 𝒏𝒐𝒕 𝒚𝒆𝒕 𝒔𝒂𝒗𝒆𝒅 𝒚𝒐𝒖𝒓 𝒂𝒍𝒊𝒗𝒆, 𝒕𝒐 𝒅𝒐 𝒕𝒉𝒊𝒔;  𝒆𝒏𝒕𝒆𝒓 𝒂𝒇𝒕𝒆𝒓 𝒂𝒍𝒊𝒗𝒆 𝒚𝒐𝒖𝒓 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒂𝒏𝒅 𝒚𝒐𝒖𝒓 𝒊𝒎𝒂𝒈𝒆 𝒐𝒓 𝒗𝒊𝒅𝒆𝒐 𝒍𝒊𝒏𝒌 𝒊𝒏 𝒕𝒉𝒊𝒔 𝒄𝒐𝒏𝒕𝒆𝒙𝒕: .𝒂𝒍𝒊𝒗𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆;𝒍𝒊𝒆𝒏");
+         repondre("𝒅𝒐𝒏'𝒕 𝒅𝒐 𝒇𝒂𝒌𝒆 𝒕𝒉𝒊𝒏𝒈𝒔 :)")
      }
  } else {
 
-    if(!superUser) { repondre ("Only the owner can  modify the alive") ; return};
+    if(!superUser) { repondre ("𝑶𝒏𝒍𝒚 𝒕𝒉𝒆 𝒐𝒘𝒏𝒆𝒓 𝒄𝒂𝒏  𝒎𝒐𝒅𝒊𝒇𝒚 𝒕𝒉𝒆 𝒂𝒍𝒊𝒗𝒆") ; return};
 
   
     const texte = arg.join(' ').split(';')[0];
