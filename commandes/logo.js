@@ -15,7 +15,7 @@ zokou({ nomCom: "hacker",
         // console.log("&€"+res);
       //  let lien = "https://e1.yotools.net" + res;
         repondre("*processing...*");
-        await zk.sendMessage(origineMessage, { image: { url:anu.image}, caption: "\t *Logo by MEGATRON-BOT*" }, { quoted: ms });
+        await zk.sendMessage(origineMessage, { image: { url:anu.image}, caption: "\t *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"*" }, { quoted: ms });
     }
     catch (e) {
         repondre("🥵🥵 " + e);
@@ -39,7 +39,7 @@ zokou({ nomCom: "dragonball", categorie: "Logo", reaction: "🐉" }, async (dest
         await zk.sendMessage(dest, { text: " *\t Traitement en cours ...*" }, { quoted: ms });
        // var idImg = Object.values(imgInfo)[3];
        
-        await zk.sendMessage(dest, { image: { url: imgInfo.image }, caption: " \t *Logo by MEGATRON-BOT*" }, { quoted: ms });
+        await zk.sendMessage(dest, { image: { url: imgInfo.image }, caption: " \t *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"*" }, { quoted: ms });
     }
     catch (e) {
         repondre("🥵🥵 " + e);
@@ -59,7 +59,7 @@ zokou({ nomCom: "naruto", categorie: "Logo", reaction: "⛩" }, async (dest, zk,
         var radio2 = "e0723d60-fc0d-421f-bf8f-a9b9b61e4be6";
         var img = await mumaker.ephoto("https://en.ephoto360.com/naruto-shippuden-logo-style-text-effect-online-808.html", arg.join(' '));
         
-        await zk.sendMessage(dest, { image: { url: img.image }, caption: "\t *Logo by MEGATRON-BOT*" }, { quoted: ms });
+        await zk.sendMessage(dest, { image: { url: img.image }, caption: "\t *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"*" }, { quoted: ms });
     }
     catch (e) {
         repondre("🥵🥵 " + e);
@@ -133,7 +133,7 @@ zokou({nomCom: "summer", categorie: "Logo", reaction: "🌞"}, async (dest, zk, 
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-sunset-light-text-effects-online-for-free-1124.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝒃𝒚 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch(console.error);
 });
@@ -156,7 +156,7 @@ zokou({nomCom: "neonlight", categorie: "Logo", reaction: "💡"}, async (dest, z
     let maker=await mumaker.textpro("https://textpro.me/create-glowing-neon-light-text-effect-online-free-1061.html",arg)
     //repondre(stringify(maker))
     /*.then((data) => {*/
-     zk.sendMessage(dest, { image: { url: maker.image }, caption: 'Logo by *MEGATRON-BOT*' }, { quoted: ms });
+     zk.sendMessage(dest, { image: { url: maker.image }, caption: '𝑳𝒐𝒈𝒐 𝒃𝒚 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     
     /*.catch(console.error);*/
 
@@ -175,7 +175,7 @@ zokou({nomCom: "greenneon", categorie: "Logo", reaction: "🟢"}, async (dest, z
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/green-neon-text-effect-874.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by *Kimmy*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝒃𝒚 *𝑲𝒊𝒎𝒎𝒚*' }, { quoted: ms });
     })
     .catch(console.error);
 });
@@ -190,7 +190,7 @@ zokou({nomCom: "glitch", categorie: "Logo", reaction: "🎛️"}, async (dest, z
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-impressive-glitch-text-effects-online-1027.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by *Damon*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝒃𝒚 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵*' }, { quoted: ms });
     })
     .catch(console.error);
 });
@@ -205,7 +205,7 @@ zokou({nomCom: "devil", categorie: "Logo", reaction: "😈"}, async (dest, zk, c
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html",arg)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝒃𝒚 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch(console.error);
 });
@@ -242,7 +242,7 @@ var lien="https://en.ephoto360.com/boom-text-comic-style-text-effect-675.html";
          
 
 repondre("  processing ...")
-         await zk.sendMessage(dest,{image:{url:img.image},caption:"\t *Logo by MEGATRON-BOT*"})
+         await zk.sendMessage(dest,{image:{url:img.image},caption:"\t *Logo by 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"})
          
         // await zk.sendMessage(dest,{image:{url:lienImage},caption:"\t *Logo by Megatron-Bot*"})
          
@@ -266,7 +266,7 @@ var {ms,repondre,arg,prefixe}=commandeOptions;
     var lien ="https://en.ephoto360.com/create-water-effect-text-online-295.html";
     var img =await mumaker.ephoto(lien,arg);
     repondre(" processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:"  *Logo by MEGATRON-BOT*"})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:"  *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"})
   }catch(e){repondre(`🥵🥵 ${e}`)}
 
 });
@@ -281,7 +281,7 @@ zokou({ nomCom: "snow", categorie: "Logo", reaction: "❄️" }, async (dest, zk
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-beautiful-3d-snow-text-effect-online-1101.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝒃𝒚 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -298,7 +298,7 @@ zokou({ nomCom: "transformer", categorie: "Logo", reaction: "🤖" }, async (des
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-a-transformer-text-effect-online-1035.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒚 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -315,7 +315,7 @@ zokou({ nomCom: "thunder", categorie: "Logo", reaction: "⚡" }, async (dest, zk
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/online-thunder-text-effect-generator-1031.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo by *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -332,7 +332,7 @@ zokou({ nomCom: "harrypotter", categorie: "Logo", reaction: "🧙‍♂️" }, a
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-harry-potter-text-effect-online-1025.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -349,7 +349,7 @@ zokou({ nomCom: "cat", categorie: "Logo", reaction: "🪟" }, async (dest, zk, c
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/write-text-on-foggy-window-online-free-1015.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -368,7 +368,7 @@ zokou({ nomCom: "whitegold", categorie: "Logo", reaction: "💫" }, async (dest,
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/elegant-white-gold-3d-text-effect-online-free-1070.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -385,7 +385,7 @@ zokou({ nomCom: "lightglow", categorie: "Logo", reaction: "🌟" }, async (dest,
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-light-glow-sliced-text-effect-online-1068.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -402,7 +402,7 @@ zokou({ nomCom: "thor", categorie: "Logo", reaction: "🔨" }, async (dest, zk, 
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-thor-logo-style-text-effect-online-1064.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -419,7 +419,7 @@ zokou({ nomCom: "neon", categorie: "Logo", reaction: "💡" }, async (dest, zk, 
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/neon-text-effect-online-879.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -438,7 +438,7 @@ zokou({nomCom:"purple",categorie:"Logo",reaction:"🧳"},async(dest,zk,commandeO
       const lien="https://en.ephoto360.com/purple-text-effect-online-100.html"
       var img = await mumaker.ephoto(lien,arg);
       repondre(" processing ...")
-      await zk.sendMessage(dest,{image:{url:img.image},caption:"*Logo by MEGATRON-BOT*"});
+      await zk.sendMessage(dest,{image:{url:img.image},caption:"*𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"});
     }catch(e){repondre(e)}
   
 })
@@ -457,7 +457,7 @@ zokou({nomCom:"gold",categorie:"Logo",reaction:"🧚🏿‍♀️"},async(dest,z
 
     var img = await mumaker.ephoto(lien,arg);
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" *Logo by MEGATRON-BOT*"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -476,7 +476,7 @@ zokou({nomCom:"arena",categorie:"Logo",reaction:"🥵"},async(dest,zk,commandeOp
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" *Logo by MEGATRON-BOT*"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -494,7 +494,7 @@ zokou({nomCom:"incandescent",categorie:"Logo",reaction:"😋"},async(dest,zk,com
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" *Logo by MEGATRON-BOT*"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -513,7 +513,7 @@ zokou({nomCom:"child",categorie:"Logo",reaction:"😇"},async(dest,zk,commandeOp
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" *Logo by MEGATRON-BOT*"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -532,7 +532,7 @@ zokou({nomCom:"typo",categorie:"Logo",reaction:"😇"},async(dest,zk,commandeOpt
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" *Logo by MEGATRON-BOT*"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -550,7 +550,7 @@ zokou({nomCom:"light",categorie:"Logo",reaction:"🌠"},async(dest,zk,commandeOp
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" *Logo by MEGATRON-BOT*"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -568,7 +568,7 @@ zokou({nomCom:"steel",categorie:"Logo",reaction:"🌠"},async(dest,zk,commandeOp
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" *Logo by MEGATRON-BOT*"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -587,7 +587,7 @@ zokou({nomCom:"sunlight",categorie:"Logo",reaction:"🌠"},async(dest,zk,command
 
     var img = await mumaker.ephoto(lien,arg.join(' '));
    repondre("processing ...")
-    await zk.sendMessage(dest,{image:{url:img.image},caption:" *Logo by MEGATRON-BOT*"},{quoted:ms})
+    await zk.sendMessage(dest,{image:{url:img.image},caption:" *𝑳𝒐𝒈𝒐 𝒃𝒚 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*"},{quoted:ms})
   }catch(e){repondre(e)}
 })
 
@@ -601,7 +601,7 @@ zokou({ nomCom: "scifi", categorie: "Logo", reaction: "💥" }, async (dest, zk,
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-3d-sci-fi-text-effect-online-1050.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -618,7 +618,7 @@ zokou({ nomCom: "magma", categorie: "Logo", reaction: "♨️" }, async (dest, z
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/create-a-magma-hot-text-effect-online-1030.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
@@ -635,7 +635,7 @@ zokou({ nomCom: "leaves", categorie: "Logo", reaction: "☘️" }, async (dest, 
   const text = arg.join(" ");
   mumaker.textpro("https://textpro.me/natural-leaves-text-effect-931.html", text)
     .then((data) => {
-      zk.sendMessage(dest, { image: { url: data.image }, caption: 'Logo BY *MEGATRON-BOT*' }, { quoted: ms });
+      zk.sendMessage(dest, { image: { url: data.image }, caption: '𝑳𝒐𝒈𝒐 𝑩𝒀 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻*' }, { quoted: ms });
     })
     .catch((err) => {
       console.error("Une erreur s'est produite :", err);
