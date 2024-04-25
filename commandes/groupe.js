@@ -285,7 +285,7 @@ zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
 zokou({ nomCom: "add", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, nomAuteurMessage, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
-  if (!verifGroupe) { return repondre("𝒇𝒐𝒇 𝒈𝒓𝒐𝒖𝒑𝒔 𝒐𝒏𝒍𝒍");} 
+  if (!verifGroupe) { return repondre("𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑𝒔 𝒐𝒏𝒍𝒚");} 
 
   const participants = await message.groupMetadata(message.jid)
 		const isImAdmin = await isAdmin(participants, message.client.user.jid)
@@ -406,26 +406,26 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
   if( superUser || verifAdmin) {
     const enetatoui = await verifierEtatJid(dest)
     try {
-      if (!arg || !arg[0] || arg === ' ') { repondre("𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒐𝒏 𝒕𝒐 activa the anti-link feature\nantilink off to deactivate the anti-link feature\nantilink action/remove to directly remove the link without notice\nantilink action/warn to give warnings\nantilink action/delete to remove the link without any sanctions\n\nPlease note that by default, the anti-link feature is set to delete.") ; return};
+      if (!arg || !arg[0] || arg === ' ') { repondre("𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒐𝒏 𝒕𝒐 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒍𝒊𝒏𝒌 𝒇𝒆𝒂𝒕𝒖𝒓𝒆\n𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒐𝒇𝒇 𝒕𝒐 𝒅𝒆𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒍𝒊𝒏𝒌 𝒇𝒆𝒂𝒕𝒖𝒓𝒆\n𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒂𝒄𝒕𝒊𝒐𝒏/𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒐 𝒅𝒊𝒓𝒆𝒄𝒕𝒍𝒚 𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒉𝒆 𝒍𝒊𝒏𝒌 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒏𝒐𝒕𝒊𝒄𝒆\n𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒂𝒄𝒕𝒊𝒐𝒏/𝒘𝒂𝒓𝒏 𝒕𝒐 𝒈𝒊𝒗𝒆 𝒘𝒂𝒓𝒏𝒊𝒏𝒈𝒔\n𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒂𝒄𝒕𝒊𝒐𝒏/𝒅𝒆𝒍𝒆𝒕𝒆 𝒕𝒐 𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒉𝒆 𝒍𝒊𝒏𝒌 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒂𝒏𝒚 𝒔𝒂𝒏𝒄𝒕𝒊𝒐𝒏𝒔\n\n𝑷𝒍𝒆𝒂𝒔𝒆 𝒏𝒐𝒕𝒆 𝒕𝒉𝒂𝒕 𝒃𝒚 𝒅𝒆𝒇𝒂𝒖𝒍𝒕, 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒍𝒊𝒏𝒌 𝒇𝒆𝒂𝒕𝒖𝒓𝒆 𝒊𝒔 𝒔𝒆𝒕 𝒕𝒐 𝒅𝒆𝒍𝒆𝒕𝒆.") ; return};
      
       if(arg[0] === 'on') {
 
       
-       if(enetatoui ) { repondre("the antilink is already activated for this group")
+       if(enetatoui ) { repondre("𝒕𝒉𝒆 𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒊𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑")
                     } else {
                   await ajouterOuMettreAJourJid(dest,"oui");
                 
-              repondre("the antilink is activated successfully") }
+              repondre("𝒕𝒉𝒆 𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒊𝒔 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆𝒅") }
      
             } else if (arg[0] === "off") {
 
               if (enetatoui) { 
                 await ajouterOuMettreAJourJid(dest , "non");
 
-                repondre("The antilink has been successfully deactivated");
+                repondre("𝑻𝒉𝒆 𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒅𝒆𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆𝒅");
                 
               } else {
-                repondre("antilink is not activated for this group");
+                repondre("𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒊𝒔 𝒏𝒐𝒕 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑");
               }
             } else if (arg.join('').split("/")[0] === 'action') {
                             
@@ -436,21 +436,21 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
                 await mettreAJourAction(dest,action);
 
-                repondre(`The anti-link action has been updated to ${arg.join('').split("/")[1]}`);
+                repondre(`𝑻𝒉𝒆 𝒂𝒏𝒕𝒊-𝒍𝒊𝒏𝒌 𝒂𝒄𝒕𝒊𝒐𝒏 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒖𝒑𝒅𝒂𝒕𝒆𝒅 𝒕𝒐 ${arg.join('').split("/")[1]}`);
 
               } else {
-                  repondre("The only actions available are warn, remove, and delete") ;
+                  repondre("𝑻𝒉𝒆 𝒐𝒏𝒍𝒚 𝒂𝒄𝒕𝒊𝒐𝒏𝒔 𝒂𝒗𝒂𝒊𝒍𝒂𝒃𝒍𝒔 𝒂𝒓𝒆 𝒘𝒂𝒓𝒏, 𝒓𝒆𝒎𝒐𝒗𝒆, 𝒂𝒏𝒅 𝒅𝒆𝒍𝒆𝒕𝒆") ;
               }
             
 
-            } else repondre("antilink on to activate the anti-link feature\nantilink off to deactivate the anti-link feature\nantilink action/remove to directly remove the link without notice\nantilink action/warn to give warnings\nantilink action/delete to remove the link without any sanctions\n\nPlease note that by default, the anti-link feature is set to delete.")
+            } else repondre("𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒐𝒏 𝒕𝒐 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒍𝒊𝒏𝒌 𝒇𝒆𝒂𝒕𝒖𝒓𝒆\n𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒐𝒇𝒇 𝒕𝒐 𝒅𝒆𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-link 𝒇𝒆𝒂𝒕𝒖𝒓𝒆\n𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒂𝒄𝒕𝒊𝒐𝒏/𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒐 𝒅𝒊𝒓𝒆𝒄𝒕𝒍𝒚 𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒉𝒆 𝒍𝒊𝒏𝒌 𝒘𝒊𝒕𝒉𝒐𝒖𝒌 𝒏𝒐𝒕𝒊𝒄𝒆\n𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒂𝒄𝒕𝒊𝒐𝒏/𝒘𝒂𝒓𝒏 𝒕𝒐 𝒈𝒊𝒗𝒆 𝒘𝒂𝒓𝒏𝒊𝒏𝒈𝒔\n𝒂𝒏𝒕𝒊𝒍𝒊𝒏𝒌 𝒂𝒄𝒕𝒊𝒐𝒏/𝒅𝒆𝒍𝒆𝒕𝒆 𝒕𝒐 𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒉𝒆 𝒍𝒊𝒏𝒌 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒂𝒏𝒚 𝒔𝒂𝒏𝒄𝒕𝒊𝒐𝒏𝒔\n\n𝑷𝒍𝒆𝒂𝒔𝒆 𝒏𝒐𝒕𝒆 𝒕𝒉𝒂𝒕 𝒃𝒚 𝒅𝒆𝒇𝒂𝒖𝒍𝒕, 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒍𝒊𝒏𝒌 𝒇𝒆𝒂𝒕𝒖𝒓𝒆 𝒊𝒔 𝒔𝒆𝒕 𝒕𝒐 𝒅𝒆𝒍𝒆𝒕𝒆.")
 
       
     } catch (error) {
        repondre(error)
     }
 
-  } else { repondre('You are not entitled to this order') ;
+  } else { repondre('𝒀𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒆𝒏𝒕𝒊𝒕𝒍𝒆𝒅 𝒕𝒐 𝒕𝒉𝒊𝒔 𝒐𝒓𝒅𝒆𝒓') ;
   }
 
 });
@@ -468,32 +468,32 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
   
   if (!verifGroupe) {
-    return repondre("*for groups only*");
+    return repondre("*𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑𝒔 𝒐𝒏𝒍𝒚*");
   }
   
   if( superUser || verifAdmin) {
     const enetatoui = await atbverifierEtatJid(dest)
     try {
-      if (!arg || !arg[0] || arg === ' ') { repondre('antibot on to activate the anti-bot feature\nantibot off to deactivate the antibot feature\nantibot action/remove to directly remove the bot without notice\nantibot action/warn to give warnings\nantilink action/delete to remove the bot message without any sanctions\n\nPlease note that by default, the anti-bot feature is set to delete.') ; return};
+      if (!arg || !arg[0] || arg === ' ') { repondre('𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒐𝒏 𝒕𝒐 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒃𝒐𝒕 𝒇𝒆𝒂𝒕𝒖𝒓𝒆\n𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒐𝒇𝒇 𝒕𝒐 𝒅𝒆𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒇𝒆𝒂𝒕𝒖𝒓𝒆\n𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒐𝒏/𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒐 𝒅𝒊𝒓𝒆𝒄𝒕𝒍𝒚 𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒏𝒐𝒕𝒊𝒄𝒆\n𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒐𝒏/𝒘𝒂𝒓𝒏 𝒕𝒐 𝒈𝒊𝒗𝒆 𝒘𝒂𝒓𝒏𝒊𝒏𝒈𝒔\n𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒐𝒏/𝒅𝒆𝒍𝒆𝒕𝒆 𝒕𝒐 𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒂𝒏𝒚 𝒔𝒂𝒏𝒄𝒕𝒊𝒐𝒏𝒔\n\n𝑷𝒍𝒆𝒂𝒔𝒆 𝒏𝒐𝒕𝒆 𝒕𝒉𝒂𝒕 𝒃𝒚 𝒅𝒆𝒇𝒂𝒖𝒍𝒕, 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒃𝒐𝒕 𝒇𝒆𝒂𝒕𝒖𝒓𝒆 𝒊𝒔 𝒔𝒆𝒕 𝒕𝒐 𝒅𝒆𝒍𝒆𝒕𝒆.') ; return};
      
       if(arg[0] === 'on') {
 
       
-       if(enetatoui ) { repondre("the antibot is already activated for this group")
+       if(enetatoui ) { repondre("𝒕𝒉𝒆 𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒊𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑")
                     } else {
                   await atbajouterOuMettreAJourJid(dest,"oui");
                 
-              repondre("the antibot is successfully activated") }
+              repondre("𝒕𝒉𝒆 𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒊𝒔 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆𝒅") }
      
             } else if (arg[0] === "off") {
 
               if (enetatoui) { 
                 await atbajouterOuMettreAJourJid(dest , "non");
 
-                repondre("The antibot has been successfully deactivated");
+                repondre("𝑻𝒉𝒆 𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒔𝒖𝒄𝒄𝒆𝒔𝒔𝒇𝒖𝒍𝒍𝒚 𝒅𝒆𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆𝒅");
                 
               } else {
-                repondre("antibot is not activated for this group");
+                repondre("𝒂𝒏𝒕𝒊𝒃𝒐𝒓 𝒊𝒔 𝒏𝒐𝒕 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑");
               }
             } else if (arg.join('').split("/")[0] === 'action') {
 
@@ -503,22 +503,22 @@ zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
                 await mettreAJourAction(dest,action);
 
-                repondre(`The anti-bot action has been updated to ${arg.join('').split("/")[1]}`);
+                repondre(`𝑻𝒉𝒆 𝒂𝒏𝒕𝒊-𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒐𝒏 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒖𝒑𝒅𝒂𝒕𝒆𝒅 𝒕𝒐 ${arg.join('').split("/")[1]}`);
 
               } else {
-                  repondre("The only actions available are warn, remove, and delete") ;
+                  repondre("𝑻𝒉𝒆 𝒐𝒏𝒍𝒚 𝒂𝒄𝒕𝒊𝒐𝒏𝒔 𝒂𝒗𝒂𝒊𝒍𝒂𝒃𝒍𝒆 𝒂𝒓𝒆 𝒘𝒂𝒓𝒏, 𝒓𝒆𝒎𝒐𝒗𝒆, 𝒂𝒏𝒅 𝒅𝒆𝒍𝒆𝒕𝒆") ;
               }
             
 
             } else {  
-              repondre('antibot on to activate the anti-bot feature\nantibot off to deactivate the antibot feature\nantibot action/remove to directly remove the bot without notice\nantibot action/warn to give warnings\nantilink action/delete to remove the bot message without any sanctions\n\nPlease note that by default, the anti-bot feature is set to delete.') ;
+              repondre('𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒐𝒏 𝒕𝒐 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒃𝒐𝒕 𝒇𝒆𝒂𝒕𝒖𝒓𝒆\n𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒐𝒇𝒇 𝒕𝒐 𝒅𝒆𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒇𝒆𝒂𝒕𝒖𝒓𝒆\n𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒐𝒏/𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒐 𝒅𝒊𝒓𝒆𝒄𝒕𝒍𝒚 𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒏𝒐𝒕𝒊𝒄𝒆\n𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒐𝒏/𝒘𝒂𝒓𝒏 𝒕𝒐 𝒈𝒊𝒗𝒆 𝒘𝒂𝒓𝒏𝒊𝒏𝒈𝒔\n𝒂𝒏𝒕𝒊𝒃𝒐𝒕 𝒂𝒄𝒕𝒊𝒐𝒏/𝒅𝒆𝒍𝒆𝒕𝒆 𝒕𝒐 𝒓𝒆𝒎𝒐𝒗𝒆 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒂𝒏𝒚 𝒔𝒂𝒏𝒄𝒕𝒊𝒐𝒏𝒔\n\n𝑷𝒍𝒆𝒂𝒔𝒆 𝒏𝒐𝒕𝒆 𝒕𝒉𝒂𝒕 𝒃𝒚 𝒅𝒆𝒇𝒂𝒖𝒍𝒕, 𝒕𝒉𝒆 𝒂𝒏𝒕𝒊-𝒃𝒐𝒕 𝒇𝒆𝒂𝒕𝒖𝒓𝒆 𝒊𝒔 𝒔𝒆𝒕 𝒕𝒐 𝒅𝒆𝒍𝒆𝒕𝒆.') ;
 
                             }
     } catch (error) {
        repondre(error)
     }
 
-  } else { repondre('You are not entitled to this order') ;
+  } else { repondre('𝒀𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒆𝒏𝒕𝒊𝒕𝒍𝒆𝒅 𝒕𝒐 𝒕𝒉𝒊𝒔 𝒐𝒓𝒅𝒆𝒓') ;
 
   }
 
@@ -530,7 +530,7 @@ zokou({ nomCom: "group", categorie: 'Group' }, async (dest, zk, commandeOptions)
 
   const { repondre, verifGroupe, verifAdmin, superUser, arg } = commandeOptions;
 
-  if (!verifGroupe) { repondre("order reserved for group only"); return };
+  if (!verifGroupe) { repondre("𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑 𝒐𝒏𝒍𝒚"); return };
   if (superUser || verifAdmin) {
 
     if (!arg[0]) { repondre('Instructions:\n\nType group open or close'); return; }
@@ -538,18 +538,18 @@ zokou({ nomCom: "group", categorie: 'Group' }, async (dest, zk, commandeOptions)
     switch (option) {
       case "open":
         await zk.groupSettingUpdate(dest, 'not_announcement')
-        repondre('group open')
+        repondre('𝒈𝒓𝒐𝒖𝒑 ope𝒏')
         break;
       case "close":
         await zk.groupSettingUpdate(dest, 'announcement');
-        repondre('Group close successfully');
+        repondre('𝑮𝒓𝒐𝒖𝒑 𝒄𝒍𝒐𝒔𝒆𝒅');
         break;
-      default: repondre("Please don't invent an option")
+      default: repondre("𝑷𝒍𝒆𝒂𝒔𝒆 𝒅𝒐𝒏'𝒕 𝒊𝒏𝒗𝒆𝒏𝒕 𝒂𝒏 𝒐𝒑𝒕𝒊𝒐𝒏")
     }
 
     
   } else {
-    repondre("order reserved for the admins");
+    repondre("𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒂𝒅𝒎𝒊𝒏𝒔");
     return;
   }
  
@@ -559,9 +559,9 @@ zokou({ nomCom: "group", categorie: 'Group' }, async (dest, zk, commandeOptions)
 zokou({ nomCom: "left", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { repondre, verifGroupe, superUser } = commandeOptions;
-  if (!verifGroupe) { repondre("order reserved for group only"); return };
+  if (!verifGroupe) { repondre("𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒈 𝒐𝒏𝒍𝒚"); return };
   if (!superUser) {
-    repondre("command reserved for the bot owner");
+    repondre("𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏𝒆𝒓");
     return;
   }
   await repondre('sayonnara') ;
@@ -574,16 +574,16 @@ zokou({ nomCom: "gname", categorie: 'Group' }, async (dest, zk, commandeOptions)
   const { arg, repondre, verifAdmin } = commandeOptions;
 
   if (!verifAdmin) {
-    repondre("order reserved for admins of the group");
+    repondre("𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒂𝒅𝒎𝒊𝒏𝒔 𝒐𝒇 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑");
     return;
   };
   if (!arg[0]) {
-    repondre("Please enter the group name");
+    repondre("𝑷𝒍𝒆𝒂𝒔𝒆 𝒆𝒏𝒕𝒆𝒓 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑 𝒏𝒂𝒎𝒆");
     return;
   };
    const nom = arg.join(' ')
   await zk.groupUpdateSubject(dest, nom);
-    repondre(`group name refresh: *${nom}*`)
+    repondre(`𝒈𝒓𝒐𝒖𝒑 𝒏𝒂𝒎𝒆 𝒓𝒆𝒇𝒓𝒆𝒔𝒉: *${nom}*`)
 
  
 }) ;
@@ -593,16 +593,16 @@ zokou({ nomCom: "gdesc", categorie: 'Group' }, async (dest, zk, commandeOptions)
   const { arg, repondre, verifAdmin } = commandeOptions;
 
   if (!verifAdmin) {
-    repondre("order reserved for admins of the group");
+    repondre("𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒂𝒅𝒎𝒊𝒏𝒔 𝒐𝒇 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑");
     return;
   };
   if (!arg[0]) {
-    repondre("Please enter the group description");
+    repondre("𝑷𝒍𝒆𝒂𝒔𝒆 𝒆𝒏𝒕𝒆𝒕 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒕𝒊𝒐𝒏");
     return;
   };
    const nom = arg.join(' ')
   await zk.groupUpdateDescription(dest, nom);
-    repondre(`group description update: *${nom}*`)
+    repondre(`𝒈𝒓𝒐𝒖𝒑 𝒅𝒆𝒔𝒄𝒓𝒊𝒑𝒕𝒊𝒐𝒏 𝒖𝒑𝒅𝒂𝒕𝒆: *${nom}*`)
 
  
 }) ;
@@ -613,7 +613,7 @@ zokou({ nomCom: "gpp", categorie: 'Group' }, async (dest, zk, commandeOptions) =
   const { repondre, msgRepondu, verifAdmin } = commandeOptions;
 
   if (!verifAdmin) {
-    repondre("order reserved for admins of the group");
+    repondre("𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒂𝒅𝒎𝒊𝒏𝒏 𝒐𝒇 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑");
     return;
   }; 
   if (msgRepondu.imageMessage) {
@@ -627,7 +627,7 @@ zokou({ nomCom: "gpp", categorie: 'Group' }, async (dest, zk, commandeOptions) =
 )
         
   } else {
-    repondre('Please mention an image')
+    repondre('𝑷𝒍𝒆𝒂𝒔𝒆 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒂𝒏 𝒊𝒎𝒂𝒈𝒆')
   }
 
 });
@@ -637,7 +637,7 @@ zokou({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,command
 
   const {repondre,msgRepondu,verifGroupe,arg ,verifAdmin , superUser}=commandeOptions;
 
-  if(!verifGroupe)  { repondre('This command is only allowed in groups.')} ;
+  if(!verifGroupe)  { repondre('𝑻𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊𝒔 𝒐𝒏𝒍𝒚 𝒂𝒍𝒍𝒐𝒘𝒆𝒅 𝒊𝒏 𝒈𝒓𝒐𝒖𝒑𝒔.')} ;
   if (verifAdmin || superUser) { 
 
   let metadata = await zk.groupMetadata(dest) ;
@@ -721,11 +721,11 @@ zokou({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,command
 
     } else {
 
-        if(!arg || !arg[0]) { repondre('Enter the text to announce or mention the message to announce');
+        if(!arg || !arg[0]) { repondre('𝑬𝒏𝒕𝒆𝒓 𝒕𝒉𝒆 𝒕𝒆𝒙𝒕 𝒕𝒐 𝒂𝒏𝒏𝒐𝒖𝒏𝒄𝒆 𝒐𝒓 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒕𝒉𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒕𝒐 𝒂𝒏𝒏𝒐𝒖𝒄𝒆');
         ; return} ;
 
       zk.sendMessage(
-         dest,
+ 𝑬𝒏𝒕   dest,
          {
           text : arg.join(' ') ,
           mentions : tag
@@ -734,7 +734,7 @@ zokou({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,command
     }
 
 } else {
-  repondre('Command reserved for admins.')
+  repondre('𝑪𝒐𝒎𝒎𝒂𝒏𝒅 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒂𝒅𝒎𝒊𝒏𝒔.')
 }
 
 });
@@ -746,25 +746,25 @@ zokou({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest, z
   try {
     const appName = arg.join(' ');
     if (!appName) {
-      return repondre("*Enter the name of the application to search for*");
+      return repondre("*𝑬𝒏𝒕𝒆𝒓 𝒕𝒉𝒆 𝒏𝒂𝒎𝒆 𝒐𝒇 𝒕𝒉𝒆 𝒂𝒑𝒑 𝒕𝒐 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓*");
     }
 
     const searchResults = await search(appName);
 
     if (searchResults.length === 0) {
-      return repondre("*can't find application, please enter another name*");
+      return repondre("*𝒄𝒂𝒏'𝒕 𝒇𝒊𝒏𝒅 𝒂𝒑𝒑, 𝒑𝒍𝒆𝒂𝒔𝒆 𝒆𝒏𝒕𝒆𝒓 𝒂𝒏𝒐𝒕𝒉𝒆𝒓 𝒏𝒂𝒎𝒆*");
     }
 
     const appData = await download(searchResults[0].id);
     const fileSize = parseInt(appData.size);
 
     if (fileSize > 300) {
-      return repondre("The file exceeds 300 MB, unable to download.");
+      return repondre("𝑻𝒉𝒆 𝒇𝒊𝒍𝒆 𝒆𝒙𝒄𝒆𝒆𝒅𝒅 300 𝑴𝑩, 𝒖𝒏𝒂𝒃𝒍𝒆 𝒕𝒐 𝒅𝒐𝒘𝒏𝒍𝒐𝒂𝒅.");
     }
 
     const downloadLink = appData.dllink;
     const captionText =
-      "『 *MEGATRON App* 』\n\n*Name :* " + appData.name +
+      "『 *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵 𝑨𝒑𝒑* 』\n\n*𝑵𝒂𝒎𝒆 :* " + appData.name +
       "\n*Id :* " + appData["package"] +
       "\n*Last Update :* " + appData.lastup +
       "\n*Size :* " + appData.size +
@@ -796,7 +796,7 @@ zokou({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest, z
     fs.unlinkSync(filePath);
   } catch (error) {
     console.error('Erreur lors du traitement de la commande apk:', error);
-    repondre("*Error during apk command processing*");
+    repondre("*𝑬𝒓𝒓𝒐𝒓 𝒅𝒖𝒓𝒊𝒏𝒈 𝒂𝒑𝒌 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒑𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈*");
   }
 });
 
@@ -816,7 +816,7 @@ zokou({
 
       const {arg , repondre , verifAdmin } = commandeOptions ;
 
-      if (!verifAdmin) { repondre('You are not an admin of this group') ; return}
+      if (!verifAdmin) { repondre('𝒀𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒂𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑') ; return}
 
       group_cron = await cron.getCronById(dest) ;
       
@@ -854,7 +854,7 @@ zokou({
 
               await cron.delCron(dest) ;
 
-              repondre("The automatic mute has been removed; restart to apply changes") 
+              repondre("𝑻𝒉𝒆 𝒂𝒖𝒕𝒐𝒎𝒂𝒕𝒊𝒄 𝒎𝒖𝒕𝒆 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒓𝒆𝒎𝒐𝒗𝒆𝒅; 𝒓𝒆𝒔𝒕𝒂𝒓𝒕 𝒕𝒐 𝒂𝒑𝒑𝒍𝒚 𝒄𝒉𝒂𝒏𝒈𝒆𝒔") 
               .then(() => {
 
                 exec("pm2 restart all");
@@ -866,14 +866,14 @@ zokou({
 
           await cron.addCron(dest,"mute_at",texte) ;
 
-          repondre(`Setting up automatic mute for ${texte} ; restart to apply changes`) 
+          repondre(`𝑺𝒆𝒕𝒕𝒊𝒏𝒈  𝒖𝒑 𝒂𝒖𝒕𝒐𝒎𝒂𝒕𝒊𝒄 𝒎𝒖𝒕𝒆 𝒇𝒐𝒓 ${texte} ; restart to apply changes`) 
           .then(() => {
 
             exec("pm2 restart all");
           }) ;
 
         } else {
-            repondre('Please enter a valid time with hour and minute separated by :') ;
+            repondre('𝑷𝒍𝒆𝒂𝒔𝒆 𝒆𝒏𝒕𝒆𝒓 𝒂 𝒗𝒂𝒍𝒊𝒅 𝒕𝒊𝒎𝒆 𝒘𝒊𝒕𝒉 𝒉𝒐𝒖𝒓 𝒂𝒏𝒅 𝒎𝒊𝒏𝒖𝒕𝒆 𝒔𝒆𝒑𝒂𝒓𝒂𝒕𝒆𝒅 𝒃𝒚 :') ;
         }
 
 
@@ -888,7 +888,7 @@ zokou({
 
     const {arg , repondre , verifAdmin } = commandeOptions ;
 
-    if (!verifAdmin) { repondre('You are not an admin of this group') ; return}
+    if (!verifAdmin) { repondre('𝒀𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒂𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑') ; return}
 
     group_cron = await cron.getCronById(dest) ;
     
@@ -927,7 +927,7 @@ zokou({
 
             await cron.delCron(dest) ;
 
-            repondre("The autounmute has been removed; restart to apply the changes")
+            repondre("𝑻𝒉𝒆 𝒂𝒖𝒕𝒐𝒖𝒏𝒎𝒖𝒕𝒆 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒓𝒆𝒎𝒐𝒗𝒆𝒅; 𝒓𝒆𝒔𝒕𝒂𝒓𝒕 𝒕𝒐 𝒂𝒑𝒑𝒍𝒚 𝒕𝒉𝒆 𝒄𝒉𝒂𝒏𝒈𝒆𝒔")
             .then(() => {
 
               exec("pm2 restart all");
@@ -949,7 +949,7 @@ zokou({
         }) ;
 
       } else {
-          repondre('Please enter a valid time with hour and minute separated by :') ;
+          repondre('𝑷𝒍𝒆𝒂𝒔𝒆 𝒆𝒏𝒕𝒆𝒓 𝒂 𝒗𝒂𝒍𝒊𝒅 𝒕𝒊𝒎𝒆 𝒘𝒊𝒕𝒉 𝒉𝒐𝒖𝒓 𝒂𝒏𝒅 𝒎𝒊𝒏𝒖𝒕𝒆 𝒔𝒆𝒑𝒂𝒓𝒂𝒕𝒆𝒅 𝒃𝒚 :') ;
       }
 
 
@@ -984,7 +984,7 @@ zokou({
       }
 
   } else {
-    repondre('Sorry, you are not an admin of this group')
+    repondre('𝑺𝒐𝒓𝒓𝒚, 𝒚𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒂𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑')
   }
 
 
@@ -998,7 +998,7 @@ zokou({
   
     const {arg , repondre , verifAdmin } = commandeOptions ;
 
-  if(!verifAdmin) { repondre('Sorry, you cannot enable NSFW content without being an admin of the group') ; return}
+  if(!verifAdmin) { repondre('𝑺𝒐𝒓𝒓𝒚, 𝒚𝒐𝒖 𝒄𝒂𝒏𝒏𝒐𝒕 𝒆𝒏𝒂𝒃𝒍𝒆 𝑵𝑺𝑭𝑾 𝒄𝒐𝒏𝒕𝒆𝒏𝒕 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒃𝒆𝒊𝒏𝒈 𝒂𝒏 𝒂𝒅𝒎𝒊𝒏 𝒐𝒇 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑') ; return}
 
       let hbd = require('../bdd/hentai') ;
 
@@ -1010,7 +1010,7 @@ zokou({
 
       await hbd.addToHentaiList(dest) ;
 
-      repondre('NSFW content is now active for this group') ;
+      repondre('𝑵𝑺𝑭𝑾 𝒄𝒐𝒏𝒕𝒆𝒏𝒕 𝒊𝒔 𝒏𝒐𝒘 𝒂𝒄𝒕𝒊𝒗𝒆 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑') ;
        
   } else if (arg[0] == 'off') {
 
@@ -1018,9 +1018,9 @@ zokou({
 
       await hbd.removeFromHentaiList(dest) ;
 
-      repondre('NSFW content is now disabled for this group') ;
+      repondre('𝑵𝑺𝑭𝑾 𝒄𝒐𝒏𝒕𝒆𝒏𝒕 𝒊𝒔 𝒏𝒐𝒘 𝒅𝒊𝒔𝒂𝒃𝒍𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑') ;
   } else {
 
-      repondre('You must enter "on" or "off"') ;
+      repondre('𝒀𝒐𝒖 𝒎𝒖𝒔𝒕 𝒆𝒏𝒕𝒆𝒓 "𝒐𝒏" or "𝒐𝒇𝒇"') ;
     }
 } ) ;
