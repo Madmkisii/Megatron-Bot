@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 zokou({ nomCom: "tempmail", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = '*MEGATRON-BOT* Temporary emails,Powered by *Kimmy* \n\n ' + "Click the link below to create unlimited TEMPORARY Emails. Powered by *FLASH-MD.*";
+    let z = '*𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻* Temporary emails,Powered by *𝑲𝒊𝒎𝒎𝒚* \n\n ' + "Click the link below to create unlimited TEMPORARY Emails. Powered by *𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵.*";
     let d = ' https://tempmailpro.app';
     let varmess = z + d;
     var img = 'https://telegra.ph/file/bcf5cec3445652ab197bc.jpg';
