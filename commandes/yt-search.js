@@ -21,7 +21,7 @@ zokou({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk, 
     for (let i = 0; i < 10; i++) {
       captions += `----------------\nTitle: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
     }
-    captions += "\n======\n*𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍*";
+    captions += "\n======\n*𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍";
 
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
@@ -77,7 +77,7 @@ _*En cours de téléchargement...*_\n\n`
 
     fileStream.on('finish', () => {
       // Envoi du fichier vidéo en utilisant l'URL du fichier local
-      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍*", gifPlayback: false }, { quoted: ms });
+      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍", gifPlayback: false }, { quoted: ms });
 
     });
 
@@ -95,7 +95,7 @@ _*En cours de téléchargement...*_\n\n`
 zokou({
   nomCom: "ytmp3",
   categorie: "Download",
-  reaction: "💿"
+  reaction: "🎶"
 }, async (origineMessage, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
 
