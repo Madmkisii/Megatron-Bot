@@ -135,7 +135,7 @@ zokou( {
     
     
          let msg = `
-┏━━━┛ MEGATRON-BOT Ranking┗━━━┓
+┏━━━┛ 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵 𝑩𝑶𝑻 𝑹𝑨𝑵𝑲𝑰𝑵𝑮 ┗━━━┓
          
     *Name :* @${auteurMsgRepondu.split("@")[0]}
     
@@ -211,7 +211,7 @@ zokou( {
     
     
          let msg = `
-┏━━━┛ MEGATRON-BOT Ranking ┗━━━┓
+┏━━━┛ 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵 𝑩𝑶𝑻 𝑹𝑨𝑵𝑲𝑰𝑵𝑮 ┗━━━┓
      
   *Name :* ${nomAuteurMessage}
 
@@ -252,7 +252,7 @@ zokou( {
     const {ms , arg, repondre,auteurMessage,nomAuteurMessage, msgRepondu , auteurMsgRepondu , mybotpic} = commandeOptions ;
 
 
-       let msg = `┏━━┛ MEGATRON-BOT-top-rang ┗━━┓\n\n`
+       let msg = `┏━━┛ 𝑴𝑬𝑮𝑨𝑻𝑹𝑶𝑵-𝑩𝑶𝑻-𝑻𝑶𝑷-𝑹𝑨𝑵𝑲𝑰𝑵𝑮 ┗━━┓\n\n`
        
       let topRanks = await getBottom10Users() ;
         let mention = [] ;
