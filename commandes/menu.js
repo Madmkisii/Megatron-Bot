@@ -43,7 +43,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────𖤍𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍-𝐁𝐎𝐓𖤍────◆
+╭────𖤍 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍 𝐁𝐎𝐓 𖤍────◆
 │𖤍 *Préfix* : ${s.PREFIXE}
 │𖤍 *User* : ${s.OWNER_NAME}
 │𖤍 *Mode* : ${mode}
