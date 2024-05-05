@@ -48,7 +48,7 @@ var {
                     })
 fs.unlinkSync(medis)
 
-                    repondre("𝑷𝒓𝒐𝒇𝒊𝒍𝒆 𝑷𝒊𝒄𝒕𝒖𝒓𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒅")
+                    repondre(" Profile Picture Updated")
                 })
 
 
@@ -57,7 +57,7 @@ fs.unlinkSync(medis)
     const { ms, repondre, arg, nomAuteurMessage, superUser } = commandeOptions;
 
     if (!superUser) {
-      repondre('𝑶𝒏𝒍𝒚 𝑴𝒐𝒅𝒅 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒕𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅'); return;
+      repondre('Only Mods can use this command'); return;
     }
     //const apikey = conf.APILOLHUMAIN
 
@@ -137,10 +137,10 @@ fs.unlinkSync(medis)
 zokou({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg, auteurMessage, superUser, auteurMsgRepondu, msgRepondu } = commandeOptions;
 
-  if (!superUser) { repondre("𝒐𝒏𝒍𝒚 𝒎𝒐𝒅𝒅𝒔 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒕𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅"); return };
+  if (!superUser) { repondre("only modds can use this command"); return };
 
-  if (!arg[0]) { repondre('𝑷𝒍𝒆𝒂𝒔𝒆 𝒆𝒏𝒕𝒆𝒓 𝒕𝒉𝒆 𝒏𝒂𝒎𝒆 𝒐𝒇 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑 𝒕𝒐 𝒄𝒓𝒆𝒂𝒕𝒆'); return };
-  if (!msgRepondu) { repondre('𝑷𝒍𝒆𝒂𝒔𝒆 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒂 𝒎𝒆𝒎𝒃𝒆𝒓 𝒂𝒅𝒅𝒆𝒅 '); return; }
+  if (!arg[0]) { repondre('Please enter the name of the group to create'); return };
+  if (!msgRepondu) { repondre('Please mention a member added '); return; }
 
   const name = arg.join(" ")
 
@@ -153,9 +153,9 @@ zokou({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) =
 zokou({ nomCom: "left", categorie: "OWNER" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
-  if (!verifGroupe) { repondre("𝒈𝒓𝒐𝒖𝒑 𝒐𝒏𝒍𝒚"); return };
+  if (!verifGroupe) { repondre("group only"); return };
   if (!superUser) {
-    repondre("𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒐𝒘𝒏𝒆𝒆");
+    repondre("order reserved for the owner");
     return;
   }
 
@@ -167,14 +167,14 @@ zokou({ nomCom: "join", categorie: "OWNER" }, async (dest, zk, commandeOptions) 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
 
   if (!superUser) {
-    repondre("𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏𝒆𝒓");
+    repondre("command reserved for the bot owner");
     return;
   }
   let result = arg[0].split('https://chat.whatsapp.com/')[1] ;
  await zk.groupAcceptInvite(result) ;
 
       repondre(`Succes`).catch((e)=>{
-  repondre('𝑼𝒏𝒌𝒏𝒐𝒘𝒏 𝒆𝒓𝒓𝒐𝒓')
+  repondre('Unknown error')
 })
 
 })
@@ -185,7 +185,7 @@ zokou({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) =>
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
          if (!superUser) {
-    repondre("𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏𝒆𝒓");
+    repondre("command reserved for the bot owner");
     return;
   }
               if(!msgRepondu) {
@@ -204,13 +204,13 @@ zokou({ nomCom: "block", categorie: "OWNER" }, async (dest, zk, commandeOptions)
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
          if (!superUser) {
-    repondre("𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏𝒆𝒓");
+    repondre("command reserved for the bot owner");
     return;
   }
 
               if(!msgRepondu) { 
                 if(verifGroupe) {
-                  repondre('𝑩𝒆 𝒔𝒖𝒓𝒆 𝒕𝒐 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒕𝒉𝒆 𝒑𝒆𝒓𝒔𝒐𝒏 𝒕𝒐 𝒃𝒍𝒐𝒄𝒌'); return
+                  repondre('Be sure to mention the person to block'); return
                 } ;
                 jid = dest
 
@@ -228,12 +228,12 @@ zokou({ nomCom: "unblock", categorie: "OWNER" }, async (dest, zk, commandeOption
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
          if (!superUser) {
-    repondre("𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏𝒆𝒓");
+    repondre("command reserved for the bot owner");
     return;
   }
               if(!msgRepondu) { 
                 if(verifGroupe) {
-                  repondre('𝑷𝒍𝒆𝒂𝒔𝒆 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒕𝒉𝒆 𝒑𝒆𝒓𝒔𝒐𝒏 𝒕𝒐 𝒃𝒆 𝒖𝒏𝒍𝒐𝒄𝒌𝒆𝒅'); return
+                  repondre('Please mention the person to be unlocked'); return
                 } ;
                 jid = dest
 
@@ -253,10 +253,10 @@ zokou({ nomCom: "kickall", categorie: 'Group', reaction: "📣" }, async (dest, 
   const metadata = await zk.groupMetadata(dest) ;
 
 
-  if (!verifGroupe) { repondre("✋🏿 ✋🏿𝒕𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊𝒔 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑𝒔 ❌"); return; }
+  if (!verifGroupe) { repondre("✋🏿 ✋🏿this command is reserved for groups ❌"); return; }
   if (superUser || auteurMessage == metadata.owner) { 
 
-   repondre('𝑵𝒐_𝒂𝒅𝒎𝒊𝒏 𝒎𝒆𝒎𝒃𝒆𝒓𝒔 𝒘𝒊𝒍𝒍 𝒃𝒆 𝒓𝒆𝒎𝒐𝒗𝒆𝒅 𝒇𝒓𝒐𝒎 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑. 𝒀𝒐𝒖 𝒉𝒂𝒗𝒆 5 𝒔𝒆𝒄𝒐𝒏𝒅𝒔 𝒕𝒐 𝒓𝒆𝒄𝒍𝒂𝒊𝒎 𝒚𝒐𝒖𝒓 𝒄𝒉𝒐𝒊𝒄𝒆 𝒃𝒚 𝒓𝒆𝒔𝒕𝒂𝒓𝒕𝒊𝒏𝒈 𝒕𝒉𝒆 𝒃𝒐𝒕.') ;
+   repondre('No_admin members will be removed from the group. You have 5 seconds to reclaim your choice by restarting the bot.') ;
    await sleep(5000)
   let membresGroupe = verifGroupe ? await infosGroupe.participants : "";
 try {
@@ -276,8 +276,8 @@ await zk.groupParticipantsUpdate(
     await sleep(500)
 
   }  
-} catch (e) {repondre("𝑰 𝒏𝒆𝒆𝒅 𝒂𝒅𝒎𝒊𝒏𝒊𝒔𝒕𝒓𝒂𝒕𝒊𝒐𝒏 𝒓𝒊𝒈𝒉𝒕𝒔")} } else {
-  repondre("𝑶𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒈𝒓𝒐𝒖𝒑 𝒐𝒘𝒏𝒆𝒓 𝒇𝒐𝒓 𝒔𝒆𝒄𝒖𝒓𝒊𝒕𝒚 𝒓𝒆𝒂𝒔𝒐𝒏𝒔"); return
+} catch (e) {repondre("I need administration rights")} } else {
+  repondre("Order reserved for the group owner for security reasons"); return
 }
 });
 
@@ -289,7 +289,7 @@ zokou({
     const { ms, arg, auteurMsgRepondu, msgRepondu , repondre,prefixe,superUser } = commandeOptions;
 
 
-  if (!superUser) {repondre('𝑻𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊𝒔 𝒐𝒏𝒍𝒚 𝒂𝒍𝒍𝒐𝒘𝒆𝒅 𝒕𝒐 𝒕𝒉𝒆 𝒃𝒐𝒕 o𝒘𝒏𝒆𝒓') ; return}
+  if (!superUser) {repondre('This command is only allowed to the bot owner') ; return}
     if (!arg[0]) {
         // Function 'reply' must be defined to send a response.
         repondre(`mention the victim by typing ${prefixe}ban add/del to ban/unban the victim`);
@@ -302,7 +302,7 @@ zokou({
 
 
    let youareban = await isUserBanned(auteurMsgRepondu)
-           if(youareban) {repondre('𝑻𝒉𝒊𝒔 𝒖𝒔𝒆𝒓 𝒊𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒍𝒚 𝒃𝒂𝒏𝒏𝒆𝒅') ; return}
+           if(youareban) {repondre('This user is already banned') ; return}
 
            addUserToBanList(auteurMsgRepondu)
                 break;
@@ -311,19 +311,19 @@ zokou({
     if (estbanni) {
 
         removeUserFromBanList(auteurMsgRepondu);
-        repondre('𝑻𝒉𝒊𝒔 𝒖𝒔𝒆𝒓 𝒊𝒔 𝒏𝒐𝒘 𝒇𝒓𝒆𝒆.');
+        repondre('This user is now free.');
     } else {
-      repondre('𝑻𝒉𝒊𝒔 𝒖𝒔𝒆𝒓 𝒊𝒔 𝒏𝒐𝒕 𝒃𝒂𝒏𝒏𝒆𝒅.');
+      repondre('This user is not banned.');
     }
     break;
 
 
             default:
-                repondre('𝒃𝒂𝒅 𝒐𝒑𝒕𝒊𝒐𝒏');
+                repondre('bad option');
                 break;
         }
     } else {
-        repondre('𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒕𝒉𝒆 𝒗𝒊𝒄𝒕𝒊𝒎')
+        repondre('mention the victim')
         return;
     }
 });
@@ -338,11 +338,11 @@ zokou({
     const { ms, arg, auteurMsgRepondu, msgRepondu , repondre,prefixe,superUser,verifGroupe } = commandeOptions;
 
 
-  if (!superUser) {repondre('𝑻𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊𝒔 𝒐𝒏𝒍𝒚 𝒂𝒍𝒍𝒐𝒘𝒆𝒅 𝒕𝒐 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏𝒆𝒓') ; return};
-  if(!verifGroupe) {repondre('𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒂𝒕𝒊𝒐𝒏 𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑𝒔' ) ; return };
+  if (!superUser) {repondre('This command is only allowed to the bot owner') ; return};
+  if(!verifGroupe) {repondre('order reservation for groups' ) ; return };
     if (!arg[0]) {
         // Function 'reply' must be defined to send a response.
-        repondre(`type ${prefix}ban add/del to ban/unban the group`);
+        repondre(`type ${prefix}bangroup add/del to ban/unban the group`);
         return;
     };
     const groupalreadyBan = await isGroupBanned(dest)
@@ -352,7 +352,7 @@ zokou({
 
 
 
-            if(groupalreadyBan) {repondre('𝑻𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑 𝒊𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒃𝒂𝒏𝒏𝒆𝒅') ; return}
+            if(groupalreadyBan) {repondre('This group is already banned') ; return}
 
             addGroupToBanList(dest)
 
@@ -361,17 +361,17 @@ zokou({
 
     if (groupalreadyBan) {
       removeGroupFromBanList(dest)
-      repondre('𝑻𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑 𝒊𝒔 𝒏𝒐𝒘 𝒇𝒓𝒆𝒆.');
+      repondre('This group is now free.');
 
     } else {
 
-      repondre('𝑻𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑 𝒊𝒔 𝒏𝒐𝒕 𝒃𝒂𝒏𝒏𝒆𝒅.');
+      repondre('This group is not banned.');
     }
     break;
 
 
             default:
-                repondre('𝒃𝒂𝒅 𝒐𝒑𝒕𝒊𝒐𝒏');
+                repondre('bad option');
                 break;
         }
 
@@ -387,7 +387,7 @@ zokou({
 
 
 if (superUser || verifAdmin) { 
-if(!verifGroupe) {repondre('𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒂𝒕𝒊𝒐𝒏 𝒇𝒐𝒓 𝒈𝒓𝒐𝒖𝒑𝒔' ) ; return };
+if(!verifGroupe) {repondre('order reservation for groups' ) ; return };
   if (!arg[0]) {
       // Function 'reply' must be defined to send a response.
       repondre(`type ${prefix}onlyadmin add/del to ban/unban the group`);
@@ -400,7 +400,7 @@ if(!verifGroupe) {repondre('𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒂�
 
 
 
-          if(groupalreadyBan) {repondre('𝑻𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑 𝒊𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒊𝒏 𝒐𝒏𝒍𝒚𝒂𝒅𝒎𝒊𝒏 𝒎𝒐𝒅𝒆') ; return}
+          if(groupalreadyBan) {repondre('This group is already in onlyadmin mode') ; return}
 
           addGroupToOnlyAdminList(dest)
 
@@ -409,11 +409,11 @@ if(!verifGroupe) {repondre('𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒂�
 
   if (groupalreadyBan) {
     removeGroupFromOnlyAdminList(dest)
-    repondre('𝑻𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑 𝒊𝒔 𝒏𝒐𝒘 𝒇𝒓𝒆𝒆.');
+    repondre('This group is now free.');
 
   } else {
 
-    repondre('𝑻𝒉𝒊𝒔 𝒈𝒓𝒐𝒖𝒑 𝒊𝒔 𝒏𝒐 𝒊𝒏 𝒐𝒏𝒍𝒚𝒂𝒅𝒎𝒊𝒏 𝒎𝒐𝒅𝒆.');
+    repondre('This group is not in onlyadmin mode.');
   }
   break;
 
@@ -422,7 +422,7 @@ if(!verifGroupe) {repondre('𝒐𝒓𝒅𝒆𝒓 𝒓𝒆𝒔𝒆𝒓𝒗𝒂�
               repondre('bad option');
               break;
       }
-} else { repondre('𝒀𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒆𝒏𝒕𝒊𝒕𝒍𝒆𝒅 𝒕𝒐 𝒕𝒉𝒊𝒔 𝒐𝒓𝒅𝒆𝒓')}
+} else { repondre('You are not entitled to this order')}
 });
 
 zokou({
@@ -433,7 +433,7 @@ zokou({
   const { ms, arg, auteurMsgRepondu, msgRepondu , repondre,prefixe,superUser } = commandeOptions;
 
 
-if (!superUser) {repondre('𝑻𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊𝒔 𝒐𝒏𝒍𝒚 𝒂𝒍𝒍𝒐𝒘𝒆𝒅 𝒕𝒐 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒐𝒘𝒏𝒆𝒓') ; return}
+if (!superUser) {repondre('This command is only allowed to the bot owner') ; return}
   if (!arg[0]) {
       // Function 'reply' must be defined to send a response.
       repondre(`mention the person by typing ${prefix}sudo add/del`);
@@ -446,7 +446,7 @@ if (!superUser) {repondre('𝑻𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊�
 
 
  let youaresudo = await issudo(auteurMsgRepondu)
-         if(youaresudo) {repondre('𝑻𝒉𝒊𝒔 𝒖𝒔𝒆𝒓 𝒊𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒔𝒖𝒅𝒐') ; return}
+         if(youaresudo) {repondre('This user is already sudo') ; return}
 
          addSudoNumber(auteurMsgRepondu)
          repondre('succes')
@@ -456,9 +456,9 @@ if (!superUser) {repondre('𝑻𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊�
   if (estsudo) {
 
       removeSudoNumber(auteurMsgRepondu);
-      repondre('𝑻𝒉𝒊𝒔 𝒖𝒔𝒆𝒓 𝒊𝒔 𝒏𝒐𝒘 𝒏𝒐𝒏-𝒔𝒖𝒅𝒐.');
+      repondre('This user is now non-sudo.');
   } else {
-    repondre('𝑻𝒉𝒊𝒔 𝒖𝒔𝒆𝒓 𝒊𝒔 𝒏𝒐𝒕 𝒔𝒖𝒅𝒐.');
+    repondre('This user is not sudo.');
   }
   break;
 
@@ -468,7 +468,7 @@ if (!superUser) {repondre('𝑻𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒊�
               break;
       }
   } else {
-      repondre('𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒕𝒉𝒆 𝒄𝒐𝒎𝒓𝒂𝒅𝒆')
+      repondre('mention the Comrade')
       return;
   }
 });
@@ -547,10 +547,10 @@ zokou({ nomCom: "save", categorie: "OWNER" }, async (dest, zk, commandeOptions) 
 
       zk.sendMessage(auteurMessage,msg)
 
-      } else { repondre('𝑴𝒆𝒏𝒕𝒊𝒐𝒏 𝒕𝒉𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒕𝒉𝒂𝒕 𝒚𝒐𝒖 𝒘𝒂𝒏𝒕 𝒕𝒐 𝒔𝒂𝒗𝒆') }
+      } else { repondre('Mention the message that you want to save') }
 
   } else {
-    repondre('𝒐𝒏𝒍𝒚 𝒎𝒐𝒅𝒔 𝒄𝒂𝒏 𝒖𝒔𝒆 𝒕𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅')
+    repondre('only mods can use this command')
   }
 
 
@@ -565,7 +565,7 @@ zokou({
 
  const {ms , repondre ,superUser , arg} = commandeOptions ;
 
- if (!superUser) {repondre'𝒚𝒐𝒖 𝒅𝒐 𝒏𝒐𝒕 𝒉𝒂𝒗𝒆 𝒕𝒉𝒆 𝒓𝒊𝒈𝒉𝒕𝒔 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅') ; return}
+ if (!superUser) {repondre('you do not have the rights for this command') ; return}
 
  const mbdd = require('../bdd/mention') ;
 
@@ -579,7 +579,7 @@ zokou({
 
   if (alldata.length === 0 ) { repondre(`To activate or modify the mention; follow this syntax: mention link type message
   The different types are audio, video, image, and sticker.
-  Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is 𝑲𝒊𝒏𝒈 𝑮`) ; return}
+  Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is France King`) ; return}
 
       if(data.status == 'non') {
           etat = 'Desactived'
@@ -600,7 +600,7 @@ Link: ${url}
 
 To activate or modify the mention, follow this syntax: mention link type message
 The different types are audio, video, image, and sticker.
-Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is 𝑲𝒊𝒏𝒈 𝑮 
+Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is France King 
 
 To stop the mention, use mention stop`;
 
@@ -626,17 +626,17 @@ To stop the mention, use mention stop`;
               })
         } else {
           repondre(`*Instructions:*
-          𝑻𝒐 𝒂𝒄𝒕𝒊𝒗𝒂𝒕𝒆 𝒐𝒓 𝒎𝒐𝒅𝒊𝒇𝒚 𝒕𝒉𝒆 𝒎𝒆𝒏𝒕𝒊𝒐𝒏, 𝒇𝒐𝒍𝒍𝒐𝒘 𝒕𝒉𝒊𝒔 𝒔𝒚𝒏𝒕𝒂𝒙: 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒍𝒊𝒏𝒌 𝒕𝒚𝒑𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆. 𝑻𝒉𝒆 𝒅𝒊𝒇𝒇𝒆𝒓𝒆𝒏𝒕 𝒕𝒚𝒑𝒆𝒔 𝒂𝒓𝒆 𝒂𝒖𝒅𝒊𝒐, 𝒗𝒊𝒅𝒆𝒐, 𝒊𝒎𝒂𝒈𝒆, 𝒂𝒏𝒅 𝒔𝒕𝒊𝒄𝒌𝒆𝒆.`)
+          To activate or modify the mention, follow this syntax: mention link type message. The different types are audio, video, image, and sticker.`)
      } 
 
     } else if ( arg.length === 1 && arg[0] == 'stop') {
 
         await mbdd.modifierStatusId1('non')
         .then(() =>{
-              repondre(' 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒔𝒕𝒐𝒑𝒑𝒆𝒅 ') ;
+              repondre(' mention stopped ') ;
         })
     }
     else {
-        repondre(`𝒑𝒍𝒆𝒂𝒔𝒆 𝒎𝒂𝒌𝒆 𝒔𝒖𝒓𝒆 𝒕𝒐 𝒇𝒐𝒍𝒍𝒐𝒘 𝒕𝒉𝒆 𝒊𝒏𝒔𝒕𝒓𝒖𝒄𝒕𝒊𝒐𝒏𝒔`) ;
+        repondre(`Please make sure to follow the instructions`) ;
     }
 })
