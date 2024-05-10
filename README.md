@@ -12,15 +12,16 @@
 
 **📌DEPLOY ON HEROKU**
    - ***Click [`FORK`](https://github.com/Madmkisii/Megatron-Bot/fork) and `Star ⭐ Repository` for Courage.***
-   - ***`Get Session` by  [`PAIRING CODE`](https://dreaded-pair.onrender.com) Then `Go-to Whatapp>Three dots>Linked Devices`***
+   - ***`Get Session` by  [`PAIRING CODE`](https://megatron-session-cce7ff954b1b.herokuapp.com/pair)
+   - ***`Get Session` by  [`QR CODE`](https://megatron-session-cce7ff954b1b.herokuapp.com/pair) Then `Go-to Whatapp>Three dots>Linked Devices`***
    - You will get a session ID in WhatsApp, copy the ID only.
    - **If you don't have an account on [Heroku](https://signup.heroku.com/), [create an account now](https://signup.heroku.com/).**
    - ***Now [DEPLOY](https://dashboard.heroku.com/new?template=https://github.com/Madmkisii/Megatron-Bot).***
 
 
-## Contributions
+## Contributions.  
 
-Contributions to Megatron-Bot are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+Contributions to Megatron-Bot are welcome! if you have ideas for new features, improvements, or bug fixes, feel free to open an issue or submit a pull request.
 
 ## License
 
