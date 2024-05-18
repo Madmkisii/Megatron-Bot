@@ -1,5 +1,5 @@
 {
-  "name":"MEGATRON-BOT",
+  "name":"PALMER MD BOT",
   "description":"An easy and simple WhatsApp bot With over 150 features developed by Damon.",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://telegra.ph/file/6965abd5ea26b6cc84a52.jpg",
@@ -35,7 +35,7 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"MEGATRON-BOT",
+      "value":"PALMER-BOT",
       "required":false
 
     } ,
@@ -74,14 +74,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "Damon"
+    "value": "Palmer"
   },
     "OWNER_NUMBER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254790593618"
+    "value": "254797653096"
   },
     "WARN_COUNT":
   {
