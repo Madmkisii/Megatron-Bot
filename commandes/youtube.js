@@ -10,7 +10,7 @@ const yts1 = require("youtube-yts");
 zokou({
   nomCom: "play",
   categorie: "Search",
-  reaction: "💿"
+  reaction: "🎶"
 }, async (origineMessage, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
      
@@ -127,7 +127,7 @@ _*On downloading...*_\n\n`
 
       fileStream.on('finish', () => {
         // Envoi du fichier vidéo en utilisant l'URL du fichier local
-        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*༒𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍𖤍༒*", gifPlayback: false }, { quoted: ms });
+        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍*", gifPlayback: false }, { quoted: ms });
       });
 
       fileStream.on('error', (error) => {
