@@ -9,7 +9,7 @@
 
 **📌DEPLOY ON HEROKU**
    - ***Click [`FORK`](https://github.com/Madmkisii/Megatron-Bot/fork) and `Star ⭐ Repository` for Courage.***
-   - ***`Get Session` by  [`PAIRING CODE`](https://dreaded-pair.onrender.com/)
+   - ***`Get Session` by  [`PAIRING CODE`](https://dreaded-pair.onrender.com)
    - ***`Get Session` by  [`QR CODE`](https://megatronkim-c3bee4d3c846.herokuapp.com/qr) Then `Go-to Whatapp>Three dots>Linked Devices`***
    - You will get a session ID in WhatsApp, copy the ID only.
    - **If you don't have an account on [Heroku](https://signup.heroku.com/), [create an account now](https://signup.heroku.com/).**
